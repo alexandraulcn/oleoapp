@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       mc:Ignorable="d"
+       xmlns:local="clr-namespace:Oleo.Views"
+       xmlns:views="clr-namespace:Oleo.Views"
+       xmlns:controls="clr-namespace:Oleo.Controls"
+       FlyoutHeaderBehavior="CollapseOnScroll"
+       Title="Oleo"
+       x:Class="Oleo.AppShell">
+
+
+
+   
+    <Shell.FlyoutHeader>
+        <controls:FlyoutHeader />
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Route="oleo"
+                Title="OleoApp"
+                FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent Title="Beneficii"
+                      Route="beneficii"
+                      IsTabStop="False"
+                      ContentTemplate="{DataTemplate views:BeneficiiPage}"
+                      />
+
+        <Tab Title="Ghid de utilizare"
+             Route="ghidUtilizare"
+             IsTabStop="False">
+            <ShellContent Route="aplicareExterna"
+                          Title="Aplicare Externa"
+                          ContentTemplate="{DataTemplate views:AplicareExternaPage}"/>
+            <ShellContent Route="aplicareInterna"
+                          Title="Aplicare Interna"
+                          ContentTemplate="{DataTemplate views:AplicareInternaPage}"/>
+
+        </Tab>
+
+        <ShellContent Route="uleiuriEsentiale"
+                      Title="Uleiuri esentiale"
+                      ContentTemplate="{DataTemplate views:UleiuriEsentialePage}"/>
+
+        <ShellContent Route="afectiuni"
+                      Title="Afectiuni"
+                      ContentTemplate="{DataTemplate views:AfectiuniPage}"/>
+        <Tab Title="Blenduri"
+             Route="blenduri">
+            <ShellContent Route="blenduriPopulare"
+                           Title="Blenduri populare"
+                           ContentTemplate="{DataTemplate views:BlenduriPopularePage}"/>
+            <ShellContent Route="jurnalBlending"
+                          Title="Jurnal de Blending"
+                          ContentTemplate="{DataTemplate views:JurnalBlendingPage}"/>
+        </Tab>
+
+        <Tab Title="Informatii Importante"
+         Route="informatiiImportante">
+            <ShellContent Route="greseliComune"
+                          Title="Greseli comune"
+                          ContentTemplate="{DataTemplate views:GreseliComunePage}"/>
+            <ShellContent Route="sarcina"
+                          Title="In sarcina: ce si cum?"
+                          ContentTemplate="{DataTemplate views:SarcinaPage}"/>
+            <ShellContent Route="pentruCopii"
+                          Title="Pentru copii"
+                          ContentTemplate="{DataTemplate views:CopiiPage}"/>
+        </Tab>
+
+
+
+
+    </FlyoutItem>
+
+
+</Shell>

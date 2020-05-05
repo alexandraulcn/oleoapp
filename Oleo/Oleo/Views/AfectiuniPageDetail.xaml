@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Oleo.Views.AfectiuniPageDetail">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="DenumireAfectiune" HorizontalTextAlignment="Center"/>
+            <Label x:Name="DescriereAfectiune"  FontSize="Small"/>
+            <Label Text="Recomandari"
+                   FontSize="16"/>
+            <Label x:Name="RecomandariAfectiune" FontSize="Small"/>
+            <Label Text="Aplicare"
+                   FontSize="16"/>
+            <Label x:Name="AplicareAfectiune" FontSize="Small"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

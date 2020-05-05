@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Oleo.Views.BeneficiiPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <Color x:Key="Primary">#ebe1da</Color>
+        <Color x:Key="LightTextColor">#9e816e</Color>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="5,25,5,25"
+                         Margin="5"
+                         Spacing="10">
+            <Label Text="Beneficiile uleiurilor esentiale"
+                   FontSize="20"
+                   TextColor="#614734"
+                   HorizontalOptions="Center"/>
+           
+            <Label Text="   Atunci când vine vorba despre remedii naturale, unele dintre cele mai eficiente și mai valoroase sunt, cu certitudine, uleiurile esențiale, care în ultimii ani sunt tot mai studiate, apreciate, iubite. În timp ce medicina alopată are rolul ei foarte bine stabilit și prețuit, terapiile alternative sunt instrumente la îndemână, care ne echilibrează și au grijă de starea noastră generală, astfel încât să fim cât mai rar nevoiți să apelăm la substanțele de sinteză.
+Plantele aromatice au jucat un rol important in civilizatia umana. "/>
+            <Image Source="beneficii.jpg"
+                   VerticalOptions="Center"/>
+            <Label Text=" Dintotdeauna, uleiurile esentiale au fost parte a celebrarii vietii si a mortii, a iubirii si a sanatatii. De la inceputurile timpurilor, uleiurile extrase din plantele aromatice au fost recunoscute ca cele mai eficiente medicamente.
+Astazi, utilizarea uleiurilor esentiale, insasi esenta plantelor, este mai mult decat stiinta, este arta de a echilibra, armoniza si a promova sanatatea trupului, a mintii si a spiritului."/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
