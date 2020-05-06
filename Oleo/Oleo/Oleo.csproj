@@ -12,10 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\JurnalPage.xaml.cs">
+      <DependentUpon>JurnalPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Controls\FlyoutHeader.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="ViewModels\UleiuriEsentialeDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AfectiuniPage.xaml">
@@ -45,10 +48,10 @@
     <EmbeddedResource Update="Views\GreseliComunePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\JurnalBlendingPage.xaml">
+    <EmbeddedResource Update="Views\JurnalPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ListViewPage1.xaml">
+    <EmbeddedResource Update="Views\JurnalPageDetail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SarcinaPage.xaml">

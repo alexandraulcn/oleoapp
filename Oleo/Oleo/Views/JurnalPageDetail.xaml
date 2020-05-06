@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Oleo.Views.JurnalPageDetail">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label x:Name="NumeJurnal"  FontSize="Small"/>
+            <Label x:Name="UtilizareJurnal"  FontSize="Small"/>
+            <Label x:Name="Ulei1Jurnal"  FontSize="Small"/>
+            <Label x:Name="Cant1Jurnal"  FontSize="Small"/>
+            <Label x:Name="Ulei2Jurnal"  FontSize="Small"/>
+            <Label x:Name="Cant2Jurnal"  FontSize="Small"/>
+            <Label x:Name="Ulei3Jurnal"  FontSize="Small"/>
+            <Label x:Name="Cant3Jurnal"  FontSize="Small"/>
+            <Label x:Name="CarrierJurnal"  FontSize="Small"/>
+            <Label x:Name="CantCarrierJurnal"  FontSize="Small"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -52,9 +52,9 @@
             <ShellContent Route="blenduriPopulare"
                            Title="Blenduri populare"
                            ContentTemplate="{DataTemplate views:BlenduriPopularePage}"/>
-            <ShellContent Route="jurnalBlending"
+            <ShellContent Route="jurnal"
                           Title="Jurnal de Blending"
-                          ContentTemplate="{DataTemplate views:JurnalBlendingPage}"/>
+                          ContentTemplate="{DataTemplate views:JurnalPage}"/>
         </Tab>
 
         <Tab Title="Informatii Importante"
