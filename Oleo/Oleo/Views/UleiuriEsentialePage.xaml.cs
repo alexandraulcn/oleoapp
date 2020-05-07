@@ -17,7 +17,7 @@ namespace Oleo.Views
         public UleiuriEsentialePage()
         {
             InitializeComponent();
-            BindingContext = new UleiuriEsentialeDetailPage();
+            
         }
 
         async void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)

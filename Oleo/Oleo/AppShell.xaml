@@ -54,7 +54,7 @@
                            ContentTemplate="{DataTemplate views:BlenduriPopularePage}"/>
             <ShellContent Route="jurnal"
                           Title="Jurnal de Blending"
-                          ContentTemplate="{DataTemplate views:JurnalPage}"/>
+                          ContentTemplate="{DataTemplate views:BlendListPage}"/>
         </Tab>
 
         <Tab Title="Informatii Importante"

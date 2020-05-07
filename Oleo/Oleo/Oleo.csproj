@@ -5,6 +5,34 @@
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="edit.png" />
+    <None Remove="Images\beneficii.jpg" />
+    <None Remove="Images\edit.png" />
+    <None Remove="Images\image1.jpg" />
+    <None Remove="Images\image2.jpg" />
+    <None Remove="Images\image3.jpg" />
+    <None Remove="Images\oleoheader.jpg" />
+    <None Remove="Images\trash.png" />
+    <None Remove="trash.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\beneficii.jpg" />
+    <EmbeddedResource Include="Images\edit.png" />
+    <EmbeddedResource Include="Images\image1.jpg" />
+    <EmbeddedResource Include="Images\image2.jpg" />
+    <EmbeddedResource Include="Images\image3.jpg" />
+    <EmbeddedResource Include="Images\trash.png" />
+    <EmbeddedResource Include="trash.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />  
@@ -12,13 +40,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\JurnalPage.xaml.cs">
-      <DependentUpon>JurnalPage.xaml</DependentUpon>
+    <EmbeddedResource Include="Images\oleoheader.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="edit.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\BlendListPage.xaml.cs">
+      <DependentUpon>BlendListPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Controls\FlyoutHeader.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AddOrEditBlendPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AfectiuniPage.xaml">
@@ -36,7 +75,7 @@
     <EmbeddedResource Update="Views\BeneficiiPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\BlendPage.xaml">
+    <EmbeddedResource Update="Views\BlendDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\BlenduriPopularePage.xaml">
@@ -48,16 +87,10 @@
     <EmbeddedResource Update="Views\GreseliComunePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\JurnalPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\JurnalPageDetail.xaml">
+    <EmbeddedResource Update="Views\BlendListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SarcinaPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\UleiuriEsentialeDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\UleiuriEsentialePage.xaml">

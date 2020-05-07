@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Oleo.Models;
+
 
 namespace Oleo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class UleiuriEsentialeDetailPage : ContentPage
+    public partial class BlendDetailPage : ContentPage
     {
-        public UleiuriEsentialeDetailPage()
+        public BlendDetailPage(Blend blend = null)
         {
             InitializeComponent();
+
+            if( blend != null)
+                ((BlendDetailViewModel)BindingContext).Blend = blend;
         }
     }
 }

@@ -3,13 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Oleo"
              mc:Ignorable="d"
-             x:Class="Oleo.Views.UleiuriEsentialeDetailPage">
+             x:Class="Oleo.Views.BlendDetailPage">
+
+    <ContentPage.BindingContext>
+        <local:BlendDetailViewModel/>
+    </ContentPage.BindingContext>
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding Blend.BlendNume}"/>
+            <Label Text="{Binding Blend.Utilizare}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
