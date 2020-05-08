@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
+   
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
@@ -48,11 +48,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\AfectiuneListPage.xaml.cs">
+      <DependentUpon>AfectiuneListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AfectiuneDetailPage.xaml.cs">
+      <DependentUpon>AfectiuneDetailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\BlendListPage.xaml.cs">
       <DependentUpon>BlendListPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
+  
+  
   <ItemGroup>
     <EmbeddedResource Update="Controls\FlyoutHeader.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -60,10 +68,10 @@
     <EmbeddedResource Update="Views\AddOrEditBlendPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\AfectiuniPage.xaml">
+    <EmbeddedResource Update="Views\AfectiuneListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\AfectiuniPageDetail.xaml">
+    <EmbeddedResource Update="Views\AfectiuneDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AplicareExternaPage.xaml">
@@ -90,10 +98,13 @@
     <EmbeddedResource Update="Views\BlendListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SarcinaPage.xaml">
+    <EmbeddedResource Update="Views\OilDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\UleiuriEsentialePage.xaml">
+    <EmbeddedResource Update="Views\OilListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SarcinaPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

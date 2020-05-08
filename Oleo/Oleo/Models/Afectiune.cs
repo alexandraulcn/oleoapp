@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SQLite;
+
 
 namespace Oleo.Models
 {
-    public class Afectiuni
+    public class Afectiune
     {
         public string Denumire { get; set; }
         public string Descriere { get; set; }

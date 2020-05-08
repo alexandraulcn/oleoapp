@@ -12,9 +12,9 @@ using Oleo.Models;
 namespace Oleo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AfectiuniPageDetail : ContentPage
+    public partial class AfectiuneDetailPage : ContentPage
     {
-        public AfectiuniPageDetail(string Denumire, string Descriere, string Recomandari, string Aplicare)
+        public AfectiuneDetailPage(string Denumire, string Descriere, string Recomandari, string Aplicare)
         {
             InitializeComponent();
 

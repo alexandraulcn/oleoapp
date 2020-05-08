@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using Oleo.Models;
+using Oleo.Service;
 using Oleo.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -13,39 +14,43 @@ using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
 namespace Oleo
+
 {
-    class BlendListViewModel
+    class BlendListViewModel : INotifyPropertyChanged
     {
-        
-        public ICommand AddBlendCommand => new Command(AddBlend);
-        public ICommand RemoveBlendCommand => new Command(RemoveBlend);
-        public ICommand UpdateBlendCommand => new Command(UpdateBlend);
-        public ObservableCollection<Blend> Blends { get; set; }
+        BlendService blendService;
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public ObservableCollection<Blend> _blends;
+        public ObservableCollection<Blend> Blends
+        {
+            get { return _blends; }
+            set { _blends = value; OnPropertChanged(); }
+        }
+
         public string BlendNume { get; set; }
         public string SelectedBlend { get; set; }
-
+        private bool _isBusy;
+        private bool IsBusy
+        {
+            get { return _isBusy; }
+            set { _isBusy = value; OnPropertChanged(); }
+        }
+        
         public BlendListViewModel()
         {
+            blendService = new BlendService();
             
-            Blends = new ObservableCollection<Blend>();
-            Blends.Add(new Blend
-            {
-                BlendNume = "Easy Breath",
-                Ulei1 = "peppermint",
-                Cant1 = "3",
-                Ulei2 = "eucalyptus",
-                Cant2 = "2",
-                Ulei3 = "R.C.",
-                Cant3 = "5",
-                Utilizare = "aplicare in zona plamanilor"
-            });
-
             MessagingCenter.Subscribe<AddOrEditBlendPage, Blend>(this, "AddOrEditBlend", 
                 (page, blend) => 
                 {
                     if(blend.BlendId == 0)
                     {
-                        blend.BlendId = Blends.Count + 1;
+                        blend.BlendId = Blends.Count +1;
                         Blends.Add(blend);
                     }
                     else
@@ -63,28 +68,7 @@ namespace Oleo
                    
                 });
 
-
         }
-
-        public void AddBlend()
-        {
-           // Blends.Add(BlendNume);
-        }
-
-        public void RemoveBlend()
-        {
-           // Blends.Remove(SelectedBlend);
-        }
-
-        public void UpdateBlend()
-        {
-            //int newIndex = Blends.IndexOf(SelectedBlend);
-            //Blends.Remove(SelectedBlend);
-
-            //Blends.Add(BlendNume);
-            //int oldIndex = Blends.IndexOf(BlendNume);
-
-            //Blends.Move(oldIndex, newIndex);
-        }
+       
     }
 }

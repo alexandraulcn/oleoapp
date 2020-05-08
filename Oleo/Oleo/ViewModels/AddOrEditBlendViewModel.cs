@@ -14,9 +14,9 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 
-namespace Oleo
+namespace Oleo.ViewModels
 {
-     class AddOrEditBlendViewModel: INotifyPropertyChanged
+     public class AddOrEditBlendViewModel: INotifyPropertyChanged
     {
         private Blend _blend;
 

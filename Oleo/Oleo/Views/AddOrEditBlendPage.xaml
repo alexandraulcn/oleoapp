@@ -6,11 +6,11 @@
              xmlns:local="clr-namespace:Oleo"
              mc:Ignorable="d"
              x:Class="Oleo.Views.AddOrEditBlendPage">
-    
-    <ContentPage.BindingContext>
+
+    <!--<ContentPage.BindingContext>
         <local:AddOrEditBlendViewModel/>
-    </ContentPage.BindingContext>
-    
+    </ContentPage.BindingContext>-->
+
     <ContentPage.Content>
         <StackLayout>
             <Entry Placeholder="Nume Blend" Text="{Binding Blend.BlendNume}"/>

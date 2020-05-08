@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Oleo.Views.AfectiuniPageDetail">
+             x:Class="Oleo.Views.AfectiuneDetailPage">
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="DenumireAfectiune" HorizontalTextAlignment="Center"/>

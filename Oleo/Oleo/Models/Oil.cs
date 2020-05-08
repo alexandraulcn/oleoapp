@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 
 
-
 namespace Oleo.Models
 {
-    public class Ulei
+    public class Oil
     {
         public string Nume { get; set; }
         public string Descriere { get; set; }

@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 using Oleo.ViewModels;
 using Oleo.Models;
 
+
 namespace Oleo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -26,7 +27,9 @@ namespace Oleo.Views
         private void Button_Clicked(object sender, EventArgs e)
         {
             Blend blend = ((AddOrEditBlendViewModel)BindingContext).Blend;
+
             MessagingCenter.Send(this, "AddOrEditBlend", blend);
+
             Navigation.PopAsync();
         }
     }

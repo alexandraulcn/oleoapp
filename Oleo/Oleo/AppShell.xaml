@@ -22,11 +22,7 @@
                 Title="OleoApp"
                 FlyoutDisplayOptions="AsMultipleItems">
 
-        <ShellContent Title="Beneficii"
-                      Route="beneficii"
-                      IsTabStop="False"
-                      ContentTemplate="{DataTemplate views:BeneficiiPage}"
-                      />
+        
 
         <Tab Title="Ghid de utilizare"
              Route="ghidUtilizare"
@@ -42,11 +38,11 @@
 
         <ShellContent Route="uleiuriEsentiale"
                       Title="Uleiuri esentiale"
-                      ContentTemplate="{DataTemplate views:UleiuriEsentialePage}"/>
+                      ContentTemplate="{DataTemplate views:OilListPage}"/>
 
         <ShellContent Route="afectiuni"
                       Title="Afectiuni"
-                      ContentTemplate="{DataTemplate views:AfectiuniPage}"/>
+                      ContentTemplate="{DataTemplate views:AfectiuneListPage}"/>
         <Tab Title="Blenduri"
              Route="blenduri">
             <ShellContent Route="blenduriPopulare"
@@ -57,13 +53,19 @@
                           ContentTemplate="{DataTemplate views:BlendListPage}"/>
         </Tab>
 
+        <ShellContent Title="Beneficii"
+                      Route="beneficii"
+                      IsTabStop="False"
+                      ContentTemplate="{DataTemplate views:BeneficiiPage}"
+                      />
+
         <Tab Title="Informatii Importante"
          Route="informatiiImportante">
             <ShellContent Route="greseliComune"
                           Title="Greseli comune"
                           ContentTemplate="{DataTemplate views:GreseliComunePage}"/>
             <ShellContent Route="sarcina"
-                          Title="In sarcina: ce si cum?"
+                          Title="In sarcina"
                           ContentTemplate="{DataTemplate views:SarcinaPage}"/>
             <ShellContent Route="pentruCopii"
                           Title="Pentru copii"
