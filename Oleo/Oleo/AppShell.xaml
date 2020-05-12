@@ -14,8 +14,7 @@
 
     <Shell.Resources>
         <ResourceDictionary>
-            <Color x:Key="NavigationPrimary">#2196F3</Color> //color of TabBar
-
+            <Color x:Key="NavigationPrimary">#2196F3</Color> 
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
@@ -52,10 +51,9 @@
                 Title="OleoApp"
                 FlyoutDisplayOptions="AsMultipleItems">
 
-        
 
-        <Tab Title="Ghid de utilizare"
-             Route="ghidUtilizare"
+        <Tab Title="Utilizare"
+             Route="utilizare"
              IsTabStop="False">
             <ShellContent Route="aplicareExterna"
                           Title="Aplicare Externa"
@@ -65,8 +63,9 @@
                           ContentTemplate="{DataTemplate views:AplicareInternaPage}"/>
 
         </Tab>
-
-        <ShellContent Route="uleiuriEsentiale"
+       
+             
+        <ShellContent Route="oils"
                       Title="Uleiuri esentiale"
                       ContentTemplate="{DataTemplate views:OilListPage}"/>
 
@@ -80,9 +79,13 @@
                            ContentTemplate="{DataTemplate views:BlenduriPopularePage}"/>
             <ShellContent Route="jurnal"
                           Title="Jurnal de Blending"
-                          ContentTemplate="{DataTemplate views:BlendsPage}"/>
+                          ContentTemplate="{DataTemplate views:BlendListPage}"/>
         </Tab>
-
+        
+        <ShellContent Route="favorites"
+                      Title="Favorite"
+                      ContentTemplate="{DataTemplate views:FavoriteListPage}"/>
+        
         <ShellContent Title="Beneficii"
                       Route="beneficii"
                       IsTabStop="False"

@@ -28,6 +28,15 @@ namespace Oleo.Views
 
         private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
+            var _container = BindingContext as AfectiuneListViewModel;
+            AfectiuniListView.BeginRefresh();
+
+            if (string.IsNullOrWhiteSpace(e.NewTextValue))
+                AfectiuniListView.ItemsSource = _container.Afectiuni;
+            else
+                AfectiuniListView.ItemsSource = _container.Afectiuni.Where(i => i.Denumire.ToLower().Contains(e.NewTextValue.ToLower()));
+            AfectiuniListView.EndRefresh();
+
 
         }
 

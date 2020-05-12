@@ -28,6 +28,15 @@ namespace Oleo.Views
 
         private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
+            var _container = BindingContext as OilListViewModel;
+            OilListView.BeginRefresh();
+
+            if (string.IsNullOrWhiteSpace(e.NewTextValue))
+                OilListView.ItemsSource = _container.Oils;
+            else
+                OilListView.ItemsSource = _container.Oils.Where(i => i.Nume.ToLower().Contains(e.NewTextValue.ToLower()));
+            OilListView.EndRefresh();
+
 
         }
     }

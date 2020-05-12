@@ -11,13 +11,14 @@
                    HorizontalTextAlignment="Center"
                    FontSize="Large"
                    FontAttributes="Bold"/>
-            <Label x:Name="Cant1Blend"  FontSize="Medium"/>
+            <Label x:Name="Cant1Blend" />
             <Label x:Name="Ulei1Blend"/>
-            <Label x:Name="Cant2Blend"  FontSize="Medium"/>
+            <Label x:Name="Cant2Blend" />
             <Label x:Name="Ulei2Blend"/>
-            <Label x:Name="Cant3Blend"  FontSize="Medium"/>
+            <Label x:Name="Cant3Blend" />
             
             <Label x:Name="Ulei3Blend"/>
+            <Label Text="Utilizare:"/>
             <Label x:Name="UtilizareBlend" />
             
             <Button Text="Sterge blend"

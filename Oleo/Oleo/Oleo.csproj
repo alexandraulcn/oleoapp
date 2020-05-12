@@ -56,6 +56,9 @@
     <Compile Update="Views\AfectiuneDetailPage.xaml.cs">
       <DependentUpon>AfectiuneDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\BlendListPage.xaml.cs">
+      <DependentUpon>BlendListPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   
@@ -88,13 +91,16 @@
     <EmbeddedResource Update="Views\BlendDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\BlendsPage.xaml">
+    <EmbeddedResource Update="Views\BlendListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\BlenduriPopularePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\CopiiPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\FavoriteListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\GreseliComunePage.xaml">
@@ -109,11 +115,5 @@
     <EmbeddedResource Update="Views\SarcinaPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  
-  
-  <ItemGroup>
-    <Folder Include="Data\" />
   </ItemGroup>
 </Project>

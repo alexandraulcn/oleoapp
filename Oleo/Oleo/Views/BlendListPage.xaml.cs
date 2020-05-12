@@ -12,9 +12,9 @@ using Oleo.Models;
 namespace Oleo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BlendsPage : ContentPage
+    public partial class BlendListPage : ContentPage
     {
-        public BlendsPage()
+        public BlendListPage()
         {
             InitializeComponent();
         }
@@ -46,6 +46,7 @@ namespace Oleo.Views
             }
         }
 
+        
         
     }
 }

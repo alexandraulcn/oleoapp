@@ -4,36 +4,32 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Oleo.Views.BlendsPage">
+             x:Class="Oleo.Views.BlendListPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+"
+        <ToolbarItem Text="Adauga blend"
                      Clicked="NewBlendToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-       
-            <ListView x:Name="BlendListView"
+        <ScrollView>
+            <StackLayout Padding="10,0,10,0">
+                <ListView x:Name="BlendListView"
                       Margin="20"
-                      ItemSelected="BlendListView_ItemSelected"
-                     >
+                      SeparatorColor="#d8c593"
+                      SeparatorVisibility="Default"
+                      ItemSelected="BlendListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                     <ViewCell>
-                        
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="7"/>
-                            </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0"
+                                <Label 
                                    Text="{Binding Nume}"
+                                   FontAttributes="Bold"
                                    VerticalOptions="CenterAndExpand"
                                    VerticalTextAlignment="Start"/>
-                            
-                        </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

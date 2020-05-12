@@ -8,10 +8,13 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10,0,10,0">
-               
+                <SearchBar Placeholder="Descopera..."  
+                           TextChanged="SearchBar_TextChanged"/>
                 <ListView ItemsSource="{Binding Oils}"
                           x:Name="OilListView"
+                          Margin="20"
                           SeparatorVisibility="Default"
+                          SeparatorColor="#d8c593"
                           ItemTapped="OnItemSelected"
                           IsPullToRefreshEnabled="True">
                     <ListView.ItemTemplate>

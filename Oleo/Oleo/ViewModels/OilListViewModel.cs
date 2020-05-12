@@ -9,10 +9,10 @@ namespace Oleo.ViewModels
 {
     class OilListViewModel
     {
-        public ObservableCollection<Oil> Oils { get; set; }
+        public List<Oil> Oils { get; set; }
         public OilListViewModel()
         {
-            Oils = new ObservableCollection<Oil>();
+            Oils = new List<Oil>();
             /*Oils.Add(new Oil
             {
                 Nume = "",

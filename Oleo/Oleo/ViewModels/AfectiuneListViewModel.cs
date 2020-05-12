@@ -8,10 +8,10 @@ namespace Oleo.ViewModels
 {
     class AfectiuneListViewModel
     {
-        public ObservableCollection<Afectiune> Afectiuni { get; set; }
+        public List<Afectiune> Afectiuni { get; set; }
         public AfectiuneListViewModel()
         {
-            Afectiuni = new ObservableCollection<Afectiune>();
+            Afectiuni = new List<Afectiune>();
             /*Afectiuni.Add(new Afectiune
             {
                 Denumire = "",
