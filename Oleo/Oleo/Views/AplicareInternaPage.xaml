@@ -12,16 +12,20 @@
                          Margin="5"
                          Spacing="10">
                 <Label Text="Ingerarea"
-                       FontSize="15"
+                       FontSize="Large"
                        TextColor="#614734"/>
-                <Label Text="Uleiurile esentiale pot fi ingerate doar cand acestea sunt de o calitate cunoscuta. Uitati-va pe etichete. Multe companii recomanda doar mirosirea si difuzarea uleiruilor. Unele le recomanda clientilor sa nu le aplice pe piele sau sa le ingereze. De ce? Deoarece ele nu sunt sufient de pure. Selectati uleiul, apoi puneti cateva picaturi intr-o capsula cu capac si il luati cu apa. Se poate dilua 50/50 cu ulei de masline. De asemenea puteti pune uleiurile intr-o lingura de sirop de artar, miere, agave."/>
+                <Label FontSize="Medium"
+                       Text="Uleiurile esentiale pot fi ingerate doar cand acestea sunt de o calitate cunoscuta. Uitati-va pe etichete. Multe companii recomanda doar mirosirea si difuzarea uleiruilor. Unele le recomanda clientilor sa nu le aplice pe piele sau sa le ingereze. De ce? Deoarece ele nu sunt sufient de pure. Selectati uleiul, apoi puneti cateva picaturi intr-o capsula cu capac si il luati cu apa. Se poate dilua 50/50 cu ulei de masline. De asemenea puteti pune uleiurile intr-o lingura de sirop de artar, miere, agave."/>
                 <Image Source="image2.jpg"/>
-                <Label Text="Ingerarea sa poate fi benefica pentru probleme intestinale, sustinerea sistemului imunitar, digestie, echilibrarea sistemului endocrin si o serie de alte functii ale organismului"/>
-                <Label Text="Luati-va uleiul de menta, acesta este un experiment haios. Picurati 1 picatura de ulei in palma, puneti varful limbii in uleiul de menta. Puneti varful limbii in cerul gurii. Inhalati de 3-4 ori, apoi inchideti gura si respirati pe nas. Veti simti cum sinusurile se vor deschide in numai cateva secunde."/>
+                <Label FontSize="Medium"
+                       Text="Ingerarea sa poate fi benefica pentru probleme intestinale, sustinerea sistemului imunitar, digestie, echilibrarea sistemului endocrin si o serie de alte functii ale organismului"/>
+                <Label FontSize="Medium"
+                       Text="Luati-va uleiul de menta, acesta este un experiment haios. Picurati 1 picatura de ulei in palma, puneti varful limbii in uleiul de menta. Puneti varful limbii in cerul gurii. Inhalati de 3-4 ori, apoi inchideti gura si respirati pe nas. Veti simti cum sinusurile se vor deschide in numai cateva secunde."/>
                 <Label Text="Prepararea mancarurilor si a bauturilor cu uleiuri esentiale"
-                       FontSize="15"
+                       FontSize="Large"
                        TextColor="#614734"/>
-                <Label Text="Puteti sa va distrati foarte mult gatind cu uleiuri esentiale.Uleiurile esentiale sunt cele care confera aroma plantelor si mirodeniilor, dau gust si savoare mancarii. Uleiurile esentiale pot fi de pana la 70 de ori mai puternice decat plantele aromatice proaspete si condimente uscate. Este foarte important ca uleiurile utilizate sa fie 100% pure si sa provina dintr-o sursa sigura. Aromele artificiale pot fi inlocuite cu uleiuri esentiale: 1-3 picaturi de ulei esential de citrice inlocuiesc 1 lingurita de coaja razuita, 1 picatura de ulei de menta la 1 lingurita de frunze proaspete de menta, 1 picatura de ulei esential scortisoara la 1-2 linguri scortisoara macinata. Pentru condimente si plante aromatice imbibati varful unei scobitori in ulei esential si amesteci in mancare, apoi gusti si vezi daca este suficient de aromata. "/>
+                <Label FontSize="Medium"
+                       Text="Puteti sa va distrati foarte mult gatind cu uleiuri esentiale.Uleiurile esentiale sunt cele care confera aroma plantelor si mirodeniilor, dau gust si savoare mancarii. Uleiurile esentiale pot fi de pana la 70 de ori mai puternice decat plantele aromatice proaspete si condimente uscate. Este foarte important ca uleiurile utilizate sa fie 100% pure si sa provina dintr-o sursa sigura. Aromele artificiale pot fi inlocuite cu uleiuri esentiale: 1-3 picaturi de ulei esential de citrice inlocuiesc 1 lingurita de coaja razuita, 1 picatura de ulei de menta la 1 lingurita de frunze proaspete de menta, 1 picatura de ulei esential scortisoara la 1-2 linguri scortisoara macinata. Pentru condimente si plante aromatice imbibati varful unei scobitori in ulei esential si amesteci in mancare, apoi gusti si vezi daca este suficient de aromata. "/>
                 <Image Source="image3.jpg"/>
             </StackLayout>
         </ScrollView>

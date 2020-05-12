@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 
 using Foundation;
 using UIKit;
@@ -24,7 +25,11 @@ namespace Oleo.iOS
         {
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+
+            string fileName = "blends_db.db3";
+            string folderPath = Path.Combine(Environment.GetFolderPath(System.Environment.SpecialFolder.Personal),"..","Library");
+            string completePath = Path.Combine(folderPath, fileName);
+            LoadApplication(new App(completePath));
 
             return base.FinishedLaunching(app, options);
         }

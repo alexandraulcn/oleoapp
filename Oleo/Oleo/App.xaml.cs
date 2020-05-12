@@ -2,19 +2,23 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Oleo.Views;
+using System.IO;
 
 
 namespace Oleo
 {
     public partial class App : Application
     {
-
-
-        public App()
+        public static string FilePath;
+        public App(string filePath)
         {
             InitializeComponent();
 
             MainPage = new AppShell();
+
+            FilePath = filePath;
+            
+
         }
 
         protected override void OnStart()

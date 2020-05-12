@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using SQLite;
 using Oleo.Models;
 
 namespace Oleo.ViewModels

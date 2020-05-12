@@ -3,16 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace: Oleo.Controls"
              mc:Ignorable="d"
              x:Class="Oleo.Views.AfectiuneListPage">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10,0,10,0">
-                <SearchBar x:Name="schAfectiuni"
-                           SearchCommand="{Binding searchCommand}"
-                           SearchCommandParameter="{Binding Text, Source={x:Reference schAfectiuni}}">
-                    
-                </SearchBar>
+                <Shell.SearchHandler>
+                   <!-- <controls:AfectiuneSearchHandler Placeholder="Introduceti afectiunea cautata"
+                                                     ShowsResults="true"
+                                                     DisplayMemberName="Denumire"/>-->
+                </Shell.SearchHandler>
                 <ListView ItemsSource="{Binding Afectiuni}"
                           x:Name="BlendListView"
                           

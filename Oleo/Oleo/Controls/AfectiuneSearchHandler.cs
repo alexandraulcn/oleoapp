@@ -8,11 +8,12 @@ using Xamarin.Forms;
 using System.Collections.ObjectModel;
 
 namespace Oleo.Controls
-{
+{ 
+    
     public class AfectiuneSearchHandler: SearchHandler
     {
         public ObservableCollection<Afectiune> Afectiuni;
-        public Type SelectedItemNavigationTarget { get; set; }
+        
         protected override void OnQueryChanged(string oldValue, string newValue)
         {
             base.OnQueryChanged(oldValue, newValue);

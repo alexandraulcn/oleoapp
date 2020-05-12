@@ -7,21 +7,24 @@
              x:Class="Oleo.Views.OilDetailPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="NumeOil" HorizontalTextAlignment="Center"/>
-            <Label x:Name="DescriereOil"  FontSize="Small"/>
+            <Label x:Name="NumeOil" 
+                   HorizontalTextAlignment="Center"
+                   FontSize="Title"
+                   FontAttributes="Bold"/>
+            <Label x:Name="DescriereOil"  FontSize="Medium"/>
             <Label Text="Proprietati"
-                   FontSize="Medium"/>
+                   FontSize="Large"/>
             <Label x:Name="ProprietatiOil" FontSize="Small"/>
             <Label Text="Indicatii"
                    FontSize="Medium"/>
-            <Label x:Name="IndicatiiOil" FontSize="Small"/>
+            <Label x:Name="IndicatiiOil" FontSize="Medium"/>
             
             <Label Text="Aplicare"
-                   FontSize="Medium"/>
-            <Label x:Name="AplicareOil" FontSize="Small"/>
+                   FontSize="Large"/>
+            <Label x:Name="AplicareOil" FontSize="Medium"/>
             <Label Text="Atentie"
-                   FontSize="16"/>
-            <Label x:Name="AtentieOil" FontSize="Small"/>
+                   FontSize="Large"/>
+            <Label x:Name="AtentieOil" FontSize="Medium"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -3,18 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:local="clr-namespace:Oleo"
              mc:Ignorable="d"
              x:Class="Oleo.Views.BlendDetailPage">
-
-    <ContentPage.BindingContext>
-        <local:BlendDetailViewModel/>
-    </ContentPage.BindingContext>
-    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding Blend.BlendNume}"/>
-            <Label Text="{Binding Blend.Utilizare}"/>
+            <Label x:Name="NumeBlend" 
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   FontAttributes="Bold"/>
+            <Label x:Name="Cant1Blend"  FontSize="Medium"/>
+            <Label x:Name="Ulei1Blend"/>
+            <Label x:Name="Cant2Blend"  FontSize="Medium"/>
+            <Label x:Name="Ulei2Blend"/>
+            <Label x:Name="Cant3Blend"  FontSize="Medium"/>
+            
+            <Label x:Name="Ulei3Blend"/>
+            <Label x:Name="UtilizareBlend" />
+            
+            <Button Text="Sterge blend"
+                    Clicked="DeleteButton_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
