@@ -166,4 +166,31 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\trash.png.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\adaugablend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\oil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\afectiuni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blends.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ghid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\important.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\benefits.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\oils.png" />
+  </ItemGroup>
 </Project>

@@ -6,18 +6,25 @@
              mc:Ignorable="d"
              x:Class="Oleo.Views.AfectiuneDetailPage">
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView>
+            <StackLayout  Padding="40,20,40,20">
             <Label x:Name="DenumireAfectiune" 
                    HorizontalTextAlignment="Center"
                    FontAttributes="Bold"
-                   FontSize="Header"/>
-            <Label x:Name="DescriereAfectiune"  FontSize="Large"/>
+                   FontSize="Title"
+                   Padding="30"/>
+            <Label x:Name="DescriereAfectiune"  
+                   FontSize="Medium"/>
             <Label Text="Recomandari"
                    FontSize="Large"/>
-            <Label x:Name="RecomandariAfectiune" FontSize="Medium"/>
+               
+            <Label x:Name="RecomandariAfectiune" 
+                   FontSize="Medium"/>
             <Label Text="Aplicare"
                    FontSize="Large"/>
-            <Label x:Name="AplicareAfectiune" FontSize="Medium"/>
+            <Label x:Name="AplicareAfectiune" 
+                   FontSize="Medium"/>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

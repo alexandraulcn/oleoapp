@@ -12,6 +12,7 @@ namespace Oleo.ViewModels
         public List<Oil> Oils { get; set; }
         public OilListViewModel()
         {
+
             Oils = new List<Oil>();
             /*Oils.Add(new Oil
             {
@@ -25,7 +26,7 @@ namespace Oleo.ViewModels
 
             Oils.Add(new Oil
             {
-                Nume = "Lamaie",
+                Nume = "Lamâie",
                 Descriere = "w",
                 Proprietati = "s",
                 Indicatii = "s",
@@ -35,12 +36,22 @@ namespace Oleo.ViewModels
 
             Oils.Add(new Oil
             {
-                Nume = "Peppermint",
+                Nume = "Mentă",
                 Descriere = "w",
                 Proprietati = "s",
                 Indicatii = "s",
                 Aplicare = "s",
                 Atentie = "s"
+            });
+
+            Oils.Add(new Oil
+            {
+                Nume = "Busuioc"
+            });
+
+            Oils.Add(new Oil
+            {
+                Nume = "Arbore de ceai"
             });
         }
     }

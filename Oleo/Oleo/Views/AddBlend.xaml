@@ -6,18 +6,56 @@
              mc:Ignorable="d"
              x:Class="Oleo.Views.AddBlend">
     <ContentPage.Content>
-        <StackLayout Margin="20,20,20,20">
-            <Entry x:Name="numeEntry"  Placeholder="Nume blend"/>
-            <Entry x:Name="cant1Entry" Placeholder="Numar picuri #1" Keyboard="Numeric"/>
-            <Entry x:Name="ulei1Entry" Placeholder="#1 Ulei esential"/>
-            <Entry x:Name="cant2Entry" Placeholder="Numar picuri #2" Keyboard="Numeric"/>
-            <Entry x:Name="ulei2Entry" Placeholder="#2 Ulei esential"/>
-            <Entry x:Name="cant3Entry" Placeholder="Numar picuri #3" Keyboard="Numeric"/>
-            <Entry x:Name="ulei3Entry" Placeholder="#3 Ulei esential"/>
-            <Entry x:Name="utilizareEntry" Placeholder="Utilizare"/>
-            <Button Text="Salveaza"
+        <ScrollView>
+            <StackLayout Margin="20,20,20,20">
+            
+            <StackLayout>
+                <Image Source="form.png"
+                       HeightRequest="100"/>
+                
+                <Entry x:Name="numeEntry"  Placeholder="Numele noului blend"/>
+                
+                <Picker x:Name="ulei1Picker"
+                        Title="Alege primul ingredient" 
+                        ItemsSource="{Binding Ingredients}"
+                        ItemDisplayBinding="{Binding Value}"
+                        SelectedItem ="{Binding SelectedIngredient1}"/>
+                <Entry x:Name="cant1Entry" Placeholder="Numarul de picuri:" Keyboard="Numeric"/>
+               
+                
+                
+                <Picker x:Name="ulei2Picker"
+                        Title="Alege al doilea ingredient" 
+                        ItemsSource="{Binding Ingredients}"
+                        ItemDisplayBinding="{Binding Value}"
+                        SelectedItem="{Binding SelectedIngredient2}"/>
+                <Entry x:Name="cant2Entry" Placeholder="Numarul de picuri: " Keyboard="Numeric"/>
+
+               
+                <Picker x:Name="ulei3Picker"
+                        Title="Alege al treilea ingredient" 
+                        ItemsSource="{Binding Ingredients}"
+                        ItemDisplayBinding="{Binding Value}"
+                        SelectedItem="{Binding SelectedIngredient3}"/>
+                
+                <Entry x:Name="cant3Entry" Placeholder="Numarul de picuri:" Keyboard="Numeric"/>
+                <Entry x:Name="descriereEntry" Placeholder="Descrierea blendului:"/>
+        </StackLayout>
+            <StackLayout Margin="80,30,80,30">
+                <Button Text="Salveaza"
                     x:Name="saveButton"
                     Clicked="SaveButton_Clicked"/>
+            </StackLayout>
+            <Label x:Name="ulei1Entry" 
+                   Text="{Binding MyIngredient1}"
+                       TextColor="White"/>
+            <Label Text="{Binding MyIngredient2}"
+                       TextColor="White"
+                    x:Name="ulei2Entry" />
+            <Label Text="{Binding MyIngredient3}"
+                       TextColor="White"
+                    x:Name="ulei3Entry" />
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -14,7 +14,7 @@
                           x:Name="OilListView"
                           Margin="20"
                           SeparatorVisibility="Default"
-                          SeparatorColor="#d8c593"
+                          SeparatorColor="#565d47"
                           ItemTapped="OnItemSelected"
                           IsPullToRefreshEnabled="True">
                     <ListView.ItemTemplate>

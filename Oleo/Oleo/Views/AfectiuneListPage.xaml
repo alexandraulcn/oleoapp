@@ -16,6 +16,8 @@
                 <ListView ItemsSource="{Binding Afectiuni}"
                           x:Name="AfectiuniListView"
                           SeparatorVisibility="Default"
+                          SeparatorColor="#565d47"
+                          Margin="20"
                           ItemTapped="OnItemSelected"
                           IsPullToRefreshEnabled="True">
                     <ListView.ItemTemplate>

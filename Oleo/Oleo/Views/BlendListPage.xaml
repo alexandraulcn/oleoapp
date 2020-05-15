@@ -7,7 +7,10 @@
              x:Class="Oleo.Views.BlendListPage">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Adauga blend"
-                     Clicked="NewBlendToolbarItem_Clicked"/>
+                     IconImageSource="adaugablend.png"
+                     Clicked="NewBlendToolbarItem_Clicked"
+                     Order="Primary"
+                     Priority="0"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>

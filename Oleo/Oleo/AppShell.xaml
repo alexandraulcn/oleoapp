@@ -14,7 +14,7 @@
 
     <Shell.Resources>
         <ResourceDictionary>
-            <Color x:Key="NavigationPrimary">#2196F3</Color> 
+            <Color x:Key="NavigationPrimary">#B8A889</Color> 
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
@@ -52,57 +52,60 @@
                 FlyoutDisplayOptions="AsMultipleItems">
 
 
-        <Tab Title="Utilizare"
-             Route="utilizare"
-             IsTabStop="False">
-            <ShellContent Route="aplicareExterna"
-                          Title="Aplicare Externa"
-                          ContentTemplate="{DataTemplate views:AplicareExternaPage}"/>
-            <ShellContent Route="aplicareInterna"
-                          Title="Aplicare Interna"
-                          ContentTemplate="{DataTemplate views:AplicareInternaPage}"/>
-
-        </Tab>
-       
-             
         <ShellContent Route="oils"
-                      Title="Uleiuri esentiale"
+                      Icon="oils.png"
+                      Title="Uleiuri esențiale"
                       ContentTemplate="{DataTemplate views:OilListPage}"/>
 
         <ShellContent Route="afectiuni"
-                      Title="Afectiuni"
+                      Title="Afecțiuni"
+                      Icon="afectiuni.png"
                       ContentTemplate="{DataTemplate views:AfectiuneListPage}"/>
         <Tab Title="Blenduri"
-             Route="blenduri">
-            <ShellContent Route="blenduriPopulare"
-                           Title="Blenduri populare"
-                           ContentTemplate="{DataTemplate views:BlenduriPopularePage}"/>
+             Route="blenduri"
+             Icon="blends.png">
             <ShellContent Route="jurnal"
                           Title="Jurnal de Blending"
                           ContentTemplate="{DataTemplate views:BlendListPage}"/>
+            <ShellContent Route="blenduriPopulare"
+                           Title="Blenduri populare"
+                           ContentTemplate="{DataTemplate views:ExampleListPage}"/>
+            
+            
         </Tab>
-        
-        <ShellContent Route="favorites"
-                      Title="Favorite"
-                      ContentTemplate="{DataTemplate views:FavoriteListPage}"/>
-        
+
+        <Tab Title="Utilizare"
+             Route="utilizare"
+             Icon="ghid.png"
+             IsTabStop="False">
+            <ShellContent Route="aplicareExterna"
+                          Title="Aplicare Externă"
+                          ContentTemplate="{DataTemplate views:AplicareExternaPage}"/>
+            <ShellContent Route="aplicareInterna"
+                          Title="Aplicare Internă"
+                          ContentTemplate="{DataTemplate views:AplicareInternaPage}"/>
+
+        </Tab>
+
         <ShellContent Title="Beneficii"
                       Route="beneficii"
-                      IsTabStop="False"
+                      Icon="benefits.png"
                       ContentTemplate="{DataTemplate views:BeneficiiPage}"
                       />
 
-        <Tab Title="Informatii Importante"
-         Route="informatiiImportante">
+        <Tab Title="Articole informative"
+             Route="informatiiImportante"
+             Icon="important.png">
             <ShellContent Route="greseliComune"
-                          Title="Greseli comune"
+                          Title="Greșeli comune"
                           ContentTemplate="{DataTemplate views:GreseliComunePage}"/>
             <ShellContent Route="sarcina"
-                          Title="In sarcina"
+                          Title="În sarcină"
                           ContentTemplate="{DataTemplate views:SarcinaPage}"/>
             <ShellContent Route="pentruCopii"
                           Title="Pentru copii"
                           ContentTemplate="{DataTemplate views:CopiiPage}"/>
+           
         </Tab>
 
 

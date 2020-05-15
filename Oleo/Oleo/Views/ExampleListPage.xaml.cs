@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Oleo.ViewModels;
+using Oleo.Models;
 
 namespace Oleo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BlenduriPopularePage : ContentPage
+    public partial class ExampleListPage : ContentPage
     {
-        public BlenduriPopularePage()
+        public ExampleListPage()
         {
             InitializeComponent();
+            BindingContext = new ExampleListViewModel();
         }
     }
 }

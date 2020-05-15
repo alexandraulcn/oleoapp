@@ -28,7 +28,7 @@ namespace Oleo.Views
             Cant1Blend.Text = selectedBlend.Cant1;
             Cant2Blend.Text = selectedBlend.Cant2;
             Cant3Blend.Text = selectedBlend.Cant3;
-            UtilizareBlend.Text = selectedBlend.Utilizare;
+            DescriereBlend.Text = selectedBlend.Descriere;
         }
 
         private void DeleteButton_Clicked(object sender, EventArgs e)

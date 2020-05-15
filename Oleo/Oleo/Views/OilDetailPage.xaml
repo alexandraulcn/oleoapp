@@ -6,17 +6,19 @@
              mc:Ignorable="d"
              x:Class="Oleo.Views.OilDetailPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="40,20,40,20">
+            
             <Label x:Name="NumeOil" 
                    HorizontalTextAlignment="Center"
                    FontSize="Title"
-                   FontAttributes="Bold"/>
+                   FontAttributes="Bold"
+                   Padding="15"/>
             <Label x:Name="DescriereOil"  FontSize="Medium"/>
             <Label Text="Proprietati"
                    FontSize="Large"/>
-            <Label x:Name="ProprietatiOil" FontSize="Small"/>
+            <Label x:Name="ProprietatiOil" FontSize="Medium"/>
             <Label Text="Indicatii"
-                   FontSize="Medium"/>
+                   FontSize="Large"/>
             <Label x:Name="IndicatiiOil" FontSize="Medium"/>
             
             <Label Text="Aplicare"

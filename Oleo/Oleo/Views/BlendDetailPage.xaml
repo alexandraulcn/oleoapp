@@ -7,22 +7,64 @@
              x:Class="Oleo.Views.BlendDetailPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="NumeBlend" 
-                   HorizontalTextAlignment="Center"
-                   FontSize="Large"
-                   FontAttributes="Bold"/>
-            <Label x:Name="Cant1Blend" />
-            <Label x:Name="Ulei1Blend"/>
-            <Label x:Name="Cant2Blend" />
-            <Label x:Name="Ulei2Blend"/>
-            <Label x:Name="Cant3Blend" />
-            
-            <Label x:Name="Ulei3Blend"/>
-            <Label Text="Utilizare:"/>
-            <Label x:Name="UtilizareBlend" />
-            
-            <Button Text="Sterge blend"
+            <StackLayout Margin="60,20,60,20">
+                <Grid Padding="50,50,50,50">
+                    <Label x:Name="NumeBlend" 
+                           HorizontalTextAlignment="Center"
+                           FontSize="Large"
+                           FontAttributes="Bold"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+                    <Label x:Name="Cant1Blend" />
+                    <Label Text=" picuri"  Grid.Column="1"/>
+                    <Label x:Name="Ulei1Blend" Grid.Column="2"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+                    <Label x:Name="Cant2Blend" />
+                    <Label Text=" picuri" Grid.Column="1"/>
+                    <Label x:Name="Ulei2Blend" Grid.Column="2"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+                    <Label x:Name="Cant3Blend" />
+                    <Label Text=" picuri" Grid.Column="1"/>
+                    <Label x:Name="Ulei3Blend" Grid.Column="2"/>
+                </Grid>
+               
+                <Label Text="Descriere:" FontSize="Medium"/>
+                <Label x:Name="DescriereBlend" />
+            </StackLayout>
+            <StackLayout Margin="80,30,80,30">
+                <Button Text="Sterge blend"
                     Clicked="DeleteButton_Clicked"/>
+            </StackLayout>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

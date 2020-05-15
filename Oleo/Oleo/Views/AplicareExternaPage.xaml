@@ -12,36 +12,36 @@
                          Spacing="10">
                
                 <Label Text="Inhalare"
-                       FontAttributes="Bold"
+                      
                        FontSize="Large"
-                       TextColor="#241d18"/>
+                       TextColor="#614734"/>
                 <Label FontSize="Medium"
-                       TextColor="#241d18"
+                       
                        Text="Puneti 2-3 picaturi de ulei in palma, frecati-le usor, puneti-va mainile peste nas si gura si inhalati usor 6-8 minute. Puteti folosi pana la 3 uleiuri odata. Uleiurile circula prin canalul nazal in plamani si apoi in fiecare celula a corpului. Diluarea uleiului esential pentru inhalare nu este necesar si nici mirosirea lui direct din sticla. Pentru ca uleiul sa patrunda in corp, acoperiti o nara, tineti sticla aproape de nara si inspirati adanc si usor. Indepartati sticla si apropiati pe gura. Repetati si cu cealalta nara si apoi mirositi cu nasul complet liber. Sa nu pufaiti uleiul, vaporii pot irita canalul nazal si produce disconfort o perioada de timp. Inhalarea este benefica in caz de disconfort la nivel cranian, probleme cu nervii, anxietate, insomnie, enervie, concentrare, probleme respiratorii si tot felul de alte alte probleme. De fapt, AromaTherapy este stiinta mirosului si a manierei in care acesta actioneaza asupra corpului, mintii si spiritului."/>
                 <Label Text="Difuzare"
                        FontSize="Large"
-                       TextColor="#241d18"/>
+                       TextColor="#614734"/>
                 <Label FontSize="Medium"
-                       TextColor="#241d18"
+                       
                        Text="Recomandam achizitionarea unui difuzer, exista o varietate larga pe viata. Intotdeauna sa folositi un difuzor cu aer rece pentru a nu dauna moleculelor. Difuzorul poate fi mutat dintr-o camera in alta si utilizat de 2 ori pe zi timp de 15 minute nu doar pentru a mirosi frumos in casa, ci si prin a improspata aerul in casa."/>
                 <Image Source="image1.jpg"/>
                 <Label Text="Aplicari zilnice"
                        FontSize="Large"
-                       TextColor="#241d18"/>
+                       TextColor="#614734"/>
                 <Label FontSize="Medium"
-                       TextColor="#241d18"
+                       
                        Text="Daca nu cunoasteti uleiurile si nu stiti ce efecte pot avea asupra tipului vostru de piele, puteti incepe prin diluarea lor. Incercati-le si va veti da seama pe care sa le diluati si pe care nu. Daca le aplicati pe piele, iar pielea se innroseste, se infierbanta, diluati cu o parte ulei de masline sau ulei de cocos. Pielea s-a inrosit din cauza faptului ca uleiul  a adus repede sangele la suprafata pielii"/>
                 <Label Text="Masaj pe intreg corpul"
                        FontSize="Large"
-                       TextColor="#241d18"/>
+                       TextColor="#614734"/>
                 <Label FontSize="Medium"
-                       TextColor="#241d18"
+                       
                        Text="Uleiurile esentiale sunt diluate intr-un ulei de masline, ulei de migdale, ulei de jojoba. Este alegerea voastra. 30 de picaturi de ulei esential se amesteca cu 25-30 ml de ulei vegetal pur. Apoi cu acest amestec se maseaza intreg corpul."/>
                 <Label Text="Baia"
                        FontSize="Large"
-                       TextColor="#241d18"/>
+                       TextColor="#614734"/>
                 <Label FontSize="Medium"
-                       TextColor="#241d18"
+                      
                        Text="Amestecati 5 picaturi de ulei pe care il preferati cu 2 cesti de sare de baie si amestecati foarte bine. Amestecati foarte bine. Adaugati jumatate de ceasca din acest amestec in apa calda sau fierbinte pregatita pentru baie."/>
             </StackLayout>
         </ScrollView>
