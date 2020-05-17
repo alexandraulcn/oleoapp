@@ -3,33 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:custom="clr-namespace:Oleo"
              mc:Ignorable="d"
-             x:Class="Oleo.Views.BlendListPage">
+             x:Class="Oleo.Views.BlendListPage"
+             Visual="Material">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Adauga blend"
-                     IconImageSource="adaugablend.png"
+                     IconImageSource="add.png"
                      Clicked="NewBlendToolbarItem_Clicked"
                      Order="Primary"
                      Priority="0"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="10,0,10,0">
+            <StackLayout Spacing="20">
                 <ListView x:Name="BlendListView"
                       Margin="20"
-                      SeparatorColor="#d8c593"
+                      SeparatorColor="{StaticResource SecondaryDarkColor}"
                       SeparatorVisibility="Default"
                       ItemSelected="BlendListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                    <ViewCell>
-                                <Label 
+                            <custom:CustomViewCell SelectedItemBackgroundColor="{StaticResource SecondaryColor}">
+                                <ViewCell.View>
+                                    <Label 
                                    Text="{Binding Nume}"
+                                   FontSize="Medium"
                                    FontAttributes="Bold"
                                    VerticalOptions="CenterAndExpand"
-                                   VerticalTextAlignment="Start"/>
-                    </ViewCell>
-                </DataTemplate>
+                                   VerticalTextAlignment="Start"
+                                   TextColor="{StaticResource SecondaryTextColor}"/>
+                                </ViewCell.View>
+                            </custom:CustomViewCell>
+                        </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
             </StackLayout>

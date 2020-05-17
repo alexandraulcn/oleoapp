@@ -13,21 +13,28 @@
 
 
     <Shell.Resources>
+        <Style x:Key="BaseStyle"
+               TargetType="Element">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#62a1ff" /> 
+            <Setter Property="Shell.TitleColor" 
+                    Value="White" />
+            <Setter Property="Shell.ForegroundColor"
+                    Value="#000000" />
+            <Setter Property="Shell.DisabledColor" 
+                    Value="#5994ea" /> 
+            <Setter Property="Shell.UnselectedColor" 
+                    Value="#003160" />
+           
+        </Style>
+        <Style TargetType="ShellItem"
+               BasedOn="{StaticResource BaseStyle}" />
+        <Style x:Key="OleoShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}"/>
         <ResourceDictionary>
-            <Color x:Key="NavigationPrimary">#B8A889</Color> 
-            <Style x:Key="BaseStyle" TargetType="Element">
+           <!--<Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
-                <Setter Property="Shell.ForegroundColor" Value="White" />
-                <Setter Property="Shell.TitleColor" Value="White" />
-                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
-                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
-            </Style>
-            <Style x:Key="MyBaseStyle" TargetType="Element">
-
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
@@ -39,7 +46,7 @@
             </Style>
 
             <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
-            <Style TargetType="TabBar" BasedOn="{StaticResource MyBaseStyle}" />
+            <Style TargetType="TabBar" BasedOn="{StaticResource MyBaseStyle}" />-->
         </ResourceDictionary>
     </Shell.Resources>
 
@@ -51,25 +58,17 @@
                 Title="OleoApp"
                 FlyoutDisplayOptions="AsMultipleItems">
 
-
-        <ShellContent Route="oils"
-                      Icon="oils.png"
-                      Title="Uleiuri esențiale"
-                      ContentTemplate="{DataTemplate views:OilListPage}"/>
-
-        <ShellContent Route="afectiuni"
-                      Title="Afecțiuni"
-                      Icon="afectiuni.png"
-                      ContentTemplate="{DataTemplate views:AfectiuneListPage}"/>
         <Tab Title="Blenduri"
              Route="blenduri"
              Icon="blends.png">
             <ShellContent Route="jurnal"
                           Title="Jurnal de Blending"
-                          ContentTemplate="{DataTemplate views:BlendListPage}"/>
+                          ContentTemplate="{DataTemplate views:BlendListPage}"
+                          Style="{StaticResource OleoShell}"/>
             <ShellContent Route="blenduriPopulare"
-                           Title="Blenduri populare"
-                           ContentTemplate="{DataTemplate views:ExampleListPage}"/>
+                          Title="Blenduri populare"
+                          ContentTemplate="{DataTemplate views:ExampleListPage}"
+                          Style="{StaticResource OleoShell}"/>
             
             
         </Tab>
@@ -80,31 +79,50 @@
              IsTabStop="False">
             <ShellContent Route="aplicareExterna"
                           Title="Aplicare Externă"
-                          ContentTemplate="{DataTemplate views:AplicareExternaPage}"/>
+                          ContentTemplate="{DataTemplate views:AplicareExternaPage}"
+                          Style="{StaticResource OleoShell}"/>
             <ShellContent Route="aplicareInterna"
                           Title="Aplicare Internă"
-                          ContentTemplate="{DataTemplate views:AplicareInternaPage}"/>
+                          ContentTemplate="{DataTemplate views:AplicareInternaPage}"
+                          Style="{StaticResource OleoShell}"/>
 
         </Tab>
 
+        <ShellContent Route="oils"
+                      Icon="oil.png"
+                      Title="Uleiuri esențiale"
+                      ContentTemplate="{DataTemplate views:OilListPage}"
+                      Style="{StaticResource OleoShell}"
+                      />
+
+        <ShellContent Route="afectiuni"
+                      Title="Afecțiuni"
+                      Icon="afectiune.png"
+                      ContentTemplate="{DataTemplate views:AfectiuneListPage}"
+                      Style="{StaticResource OleoShell}"
+                     />
+
         <ShellContent Title="Beneficii"
                       Route="beneficii"
-                      Icon="benefits.png"
+                      Icon="happy.png"
                       ContentTemplate="{DataTemplate views:BeneficiiPage}"
-                      />
+                      Style="{StaticResource OleoShell}"/>
 
         <Tab Title="Articole informative"
              Route="informatiiImportante"
-             Icon="important.png">
+             Icon="atentie.png">
             <ShellContent Route="greseliComune"
                           Title="Greșeli comune"
-                          ContentTemplate="{DataTemplate views:GreseliComunePage}"/>
+                          ContentTemplate="{DataTemplate views:GreseliComunePage}"
+                          Style="{StaticResource OleoShell}"/>
             <ShellContent Route="sarcina"
                           Title="În sarcină"
-                          ContentTemplate="{DataTemplate views:SarcinaPage}"/>
+                          ContentTemplate="{DataTemplate views:SarcinaPage}"
+                          Style="{StaticResource OleoShell}"/>
             <ShellContent Route="pentruCopii"
                           Title="Pentru copii"
-                          ContentTemplate="{DataTemplate views:CopiiPage}"/>
+                          ContentTemplate="{DataTemplate views:CopiiPage}"
+                          Style="{StaticResource OleoShell}"/>
            
         </Tab>
 

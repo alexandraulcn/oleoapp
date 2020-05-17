@@ -19,7 +19,7 @@ namespace Oleo.Views
             InitializeComponent();
         }
 
-        private void NewBlendToolbarItem_Clicked(object sender, EventArgs e)
+        public void NewBlendToolbarItem_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new AddBlend());
         }

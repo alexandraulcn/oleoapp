@@ -5,34 +5,46 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Oleo.Views.BeneficiiPage"
-             Shell.NavBarIsVisible="False">
-    <ContentPage.Resources>
-        <Color x:Key="Primary">#ebe1da</Color>
-        <Color x:Key="LightTextColor">#9e816e</Color>
-    </ContentPage.Resources>
+             Visual="Material"
+             BackgroundColor= "#fafafa"
+             >
+    
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="5,25,5,25"
-                         Margin="5"
-                         Spacing="10">
-            <Label Text="Beneficiile uleiurilor esentiale"
-                   FontSize="Large"
-                   TextColor="#614734"
-                   HorizontalOptions="Center"/>
-                <Grid Padding="10,5,10,5">
-                    <Label FontSize="Medium"
-                           Text="  Atunci cand vine vorba despre remedii naturale, unele dintre cele mai eficiente și mai valoroase sunt, cu certitudine, uleiurile esențiale, care în ultimii ani sunt tot mai studiate, apreciate, iubite. În timp ce medicina alopată are rolul ei foarte bine stabilit și prețuit, terapiile alternative sunt instrumente la îndemână, care ne echilibrează și au grijă de starea noastră generală, astfel încât să fim cât mai rar nevoiți să apelăm la substanțele de sinteză.
+            <StackLayout Padding="10"
+                         Spacing="20">
+                <Label Text="Beneficiile uleiurilor esențiale"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="Regular"
+                       TextColor="{StaticResource SecondaryDarkColor}"
+                       FontSize="Title"
+                       Padding="10"/>
+
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <StackLayout>
+                        <Label FontSize="Medium"
+                               TextColor="{StaticResource SecondaryTextColor}"
+                               Text="  Atunci când vine vorba despre remedii naturale, unele dintre cele mai eficiente și mai valoroase sunt, cu certitudine, uleiurile esențiale, care în ultimii ani sunt tot mai studiate, apreciate, iubite.&#10; În timp ce medicina alopată are rolul ei foarte bine stabilit și prețuit, terapiile alternative sunt instrumente la îndemână, care ne echilibrează și au grijă de starea noastră generală, astfel încât să fim cât mai rar nevoiți să apelăm la substanțele de sinteză.
 Plantele aromatice au jucat un rol important in civilizatia umana. "/>
-                </Grid>
-                <Grid Padding="20">
-                    <Image Source="beneficii.jpg"
-                           VerticalOptions="Center"/>
-                </Grid>
-                <Grid Padding="10,5,10,5">
-                    <Label FontSize="Medium"
-                                     Text=" Dintotdeauna, uleiurile esentiale au fost parte a celebrarii vietii si a mortii, a iubirii si a sanatatii. De la inceputurile timpurilor, uleiurile extrase din plantele aromatice au fost recunoscute ca cele mai eficiente medicamente.
-Astazi, utilizarea uleiurilor esentiale, insasi esenta plantelor, este mai mult decat stiinta, este arta de a echilibra, armoniza si a promova sanatatea trupului, a mintii si a spiritului."/>
-                </Grid>
+                    </StackLayout>
+                </Frame>
+                
+               
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <StackLayout>
+                        <Image Source="beneficii.jpg"
+                               VerticalOptions="Center"
+                               Aspect="AspectFill"/>
+                        <Label FontSize="Medium"
+                           TextColor="{StaticResource SecondaryTextColor}"
+                           Text="  Dintotdeauna, uleiurile esențiale au fost parte a celebrării vieții si a morții, a iubirii si a sănătații. De la inceputurile timpurilor, uleiurile extrase din plantele aromatice au fost recunoscute ca cele mai eficiente medicamente.
+Astăzi, utilizarea uleiurilor esențiale, insăși esența plantelor, este mai mult decat știinta, este arta de a echilibra, armoniza și a promova sănătatea trupului, a minții si a spiritului."/>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

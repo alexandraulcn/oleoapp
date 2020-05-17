@@ -25,6 +25,8 @@ namespace Oleo.iOS
         {
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
+         
+            global::Xamarin.Forms.FormsMaterial.Init();
 
             string fileName = "blends_db.db3";
             string folderPath = Path.Combine(Environment.GetFolderPath(System.Environment.SpecialFolder.Personal),"..","Library");

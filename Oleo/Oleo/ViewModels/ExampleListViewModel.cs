@@ -23,6 +23,18 @@ namespace Oleo.ViewModels
                 Cant3 = "6"
 
             });
+
+            Examples.Add(new Example
+            {
+                Nume = "ADIO MIROSURI",
+                Ulei1 = "Lemongrass",
+                Cant1 = "4",
+                Ulei2 = "Lemon",
+                Cant2 = "3",
+                Ulei3 = "Purification",
+                Cant3 = "3"
+
+            });
         }
     }
 }

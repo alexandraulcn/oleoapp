@@ -4,33 +4,46 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:controls="clr-namespace: Oleo.Controls"
+             xmlns:custom="clr-namespace:Oleo"
              mc:Ignorable="d"
-             x:Class="Oleo.Views.AfectiuneListPage">
-    
+             x:Class="Oleo.Views.AfectiuneListPage"
+             Visual="Material"
+             Shell.NavBarIsVisible="False">
+
     <ContentPage.Content>
         
         <ScrollView>
-            <StackLayout Padding="10,0,10,0">
-                <SearchBar Placeholder="Cauta..."  
-                           TextChanged="SearchBar_TextChanged"/>
+            <StackLayout Spacing="20"
+                        >
+                <SearchBar Placeholder="Descoperă..."  
+                           TextChanged="SearchBar_TextChanged"
+                           
+                           PlaceholderColor="{StaticResource SecondaryDarkColor}"
+                           CancelButtonColor="{StaticResource SecondaryDarkColor}"
+                           Margin="10,10,0,10"/>
+                
                 <ListView ItemsSource="{Binding Afectiuni}"
                           x:Name="AfectiuniListView"
                           SeparatorVisibility="Default"
-                          SeparatorColor="#565d47"
-                          Margin="20"
+                          SeparatorColor="{StaticResource SecondaryDarkColor}"
+                          Margin="20,0,20,20"
                           ItemTapped="OnItemSelected"
                           IsPullToRefreshEnabled="True">
                     <ListView.ItemTemplate>
                 <DataTemplate>
-                            <ViewCell>
-                                <Grid>
-                                    <Label Text="{Binding Denumire}"
-                                           FontAttributes="Bold"
+                            <custom:CustomViewCell SelectedItemBackgroundColor="{StaticResource SecondaryColor}">
+                                <ViewCell.View>
+                                    <Grid>
+                                        <Label Text="{Binding Denumire}"
+                                           FontSize="Medium"
+                                           
                                            VerticalOptions="CenterAndExpand"
+                                           TextColor="{StaticResource SecondaryTextColor}"
                                        />
-                                </Grid>
-                            </ViewCell>
-                </DataTemplate>
+                                    </Grid>
+                                </ViewCell.View>
+                            </custom:CustomViewCell>
+                        </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
             </StackLayout>

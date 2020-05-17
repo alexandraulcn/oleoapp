@@ -4,27 +4,59 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Oleo.Views.AfectiuneDetailPage">
+             x:Class="Oleo.Views.AfectiuneDetailPage"
+             Visual="Material"
+             BackgroundColor= "#fafafa">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout  Padding="40,20,40,20">
-            <Label x:Name="DenumireAfectiune" 
-                   HorizontalTextAlignment="Center"
-                   FontAttributes="Bold"
-                   FontSize="Title"
-                   Padding="30"/>
-            <Label x:Name="DescriereAfectiune"  
-                   FontSize="Medium"/>
-            <Label Text="Recomandari"
-                   FontSize="Large"/>
-               
-            <Label x:Name="RecomandariAfectiune" 
-                   FontSize="Medium"/>
-            <Label Text="Aplicare"
-                   FontSize="Large"/>
-            <Label x:Name="AplicareAfectiune" 
-                   FontSize="Medium"/>
-        </StackLayout>
+            <StackLayout Padding="10"
+                         Spacing="20">
+                <Label x:Name="DenumireAfectiune" 
+                       HorizontalTextAlignment="Center"
+                       TextColor="{StaticResource SecondaryDarkColor}"
+                       FontSize="Title"
+                       Padding="10"/>
+
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <StackLayout>
+                        <Label x:Name="DescriereAfectiune"  
+                               FontSize="Medium"
+                               FontFamily="LightItalic"
+                               TextColor="{StaticResource SecondaryTextColor}"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <StackLayout>
+                        <Label Text="Recomandari"
+                               FontSize="Medium"
+                               FontFamily="Regular"
+                               TextColor="{StaticResource TextColor}"/>
+
+                        <Label x:Name="RecomandariAfectiune" 
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryTextColor}"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <StackLayout>
+                        <Label Text="Aplicare"
+                               FontSize="Medium"
+                               FontFamily="Regular"
+                               TextColor="{StaticResource TextColor}"/>
+                        <Label x:Name="AplicareAfectiune" 
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryTextColor}"/>
+                    </StackLayout>
+            </Frame>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -11,23 +11,28 @@
 
   <ItemGroup>
     <None Remove="edit.png" />
+    <None Remove="Fonts\Merriweather-Bold.ttf" />
+    <None Remove="Fonts\Merriweather-BoldItalic.ttf" />
+    <None Remove="Fonts\Merriweather-Italic.ttf" />
+    <None Remove="Fonts\Merriweather-LightItalic.ttf" />
+    <None Remove="Fonts\Merriweather-Regular.ttf" />
     <None Remove="Images\beneficii.jpg" />
-    <None Remove="Images\edit.png" />
     <None Remove="Images\image1.jpg" />
     <None Remove="Images\image2.jpg" />
     <None Remove="Images\image3.jpg" />
-    <None Remove="Images\oleoheader.jpg" />
-    <None Remove="Images\trash.png" />
     <None Remove="trash.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Fonts\Merriweather-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Merriweather-BoldItalic.ttf" />
+    <EmbeddedResource Include="Fonts\Merriweather-Italic.ttf" />
+    <EmbeddedResource Include="Fonts\Merriweather-LightItalic.ttf" />
+    <EmbeddedResource Include="Fonts\Merriweather-Regular.ttf" />
     <EmbeddedResource Include="Images\beneficii.jpg" />
-    <EmbeddedResource Include="Images\edit.png" />
     <EmbeddedResource Include="Images\image1.jpg" />
     <EmbeddedResource Include="Images\image2.jpg" />
     <EmbeddedResource Include="Images\image3.jpg" />
-    <EmbeddedResource Include="Images\trash.png" />
     <EmbeddedResource Include="trash.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -37,12 +42,9 @@
    
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
    
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />  
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Images\oleoheader.jpg" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.772" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />  
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.6.0.772" />
   </ItemGroup>
 
   <ItemGroup>

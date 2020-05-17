@@ -26,7 +26,7 @@ namespace Oleo.ViewModels
 
             Oils.Add(new Oil
             {
-                Nume = "Lamâie",
+                Nume = "Lămâie",
                 Descriere = "w",
                 Proprietati = "s",
                 Indicatii = "s",

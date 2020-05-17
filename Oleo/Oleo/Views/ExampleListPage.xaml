@@ -3,41 +3,84 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:custom="clr-namespace:Oleo"
              mc:Ignorable="d"
-             x:Class="Oleo.Views.ExampleListPage">
-    <ContentPage.Content>
+             x:Class="Oleo.Views.ExampleListPage"
+             Visual="Material"
+             BackgroundColor= "#fafafa">
 
+    <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="10,0,10,0">
-                <ListView ItemsSource="{Binding Examples}"
+            <StackLayout Padding="10">
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    
+                    <ListView ItemsSource="{Binding Examples}"
                           x:Name="ExamplesListView"
                           SeparatorVisibility="Default"
+                          SeparatorColor="{StaticResource SecondaryDarkColor}"
                           RowHeight="100"
                           >
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <ViewCell >
-                                <StackLayout Orientation="Vertical">
-                                    <Grid>
-                                        <Label Text="{Binding Nume}"
-                                           FontAttributes="Bold"
-                                           VerticalOptions="CenterAndExpand"
-                                       />
-                                    </Grid>
-                                    <Grid>
-                                        <Label Text="{Binding Cant1}"/>
-                                    </Grid>
-                                    <Grid>
-                                        <Label Text="{Binding Cant2}"/>
-                                    </Grid>
-                                    <Grid>
-                                        <Label Text="{Binding Cant3}"/>
-                                    </Grid>
-                                </StackLayout>
-                            </ViewCell>
+                            <custom:CustomViewCell SelectedItemBackgroundColor="White">
+                                <ViewCell.View>
+                                        <FlexLayout Direction="Row"
+                                                    Wrap="Wrap"
+                                                    JustifyContent="SpaceBetween"
+                                                    AlignItems="Center"
+                                                    Margin="10">    
+
+                                            <Label Text="{Binding Nume}"
+                                                   FontAttributes="Bold"
+                                                   VerticalOptions="CenterAndExpand"
+                                                   TextColor="{StaticResource SecondaryDarkColor}"
+                                                   FlexLayout.Basis="100%"/>
+                                        
+                                            <Label Text="{Binding Cant1}"
+                                                   TextColor="{StaticResource SecondaryTextColor}"
+                                                   FlexLayout.Basis="10%"/>
+                                            
+                                            <Label Text="picături"
+                                                   TextColor="{StaticResource SecondaryTextColor}"
+                                                   FlexLayout.Basis="25%"/>
+                                            
+                                            <Label Text="{Binding Ulei1}"
+                                                   TextColor="{StaticResource SecondaryTextColor}"
+                                                   FlexLayout.Basis="65%"/>
+
+                                            <Label Text="{Binding Cant2}"
+                                                   TextColor="{StaticResource SecondaryTextColor}"
+                                                   FlexLayout.Basis="10%"/>
+
+                                            <Label Text="picături"
+                                                   TextColor="{StaticResource SecondaryTextColor}"
+                                                   FlexLayout.Basis="25%"/>
+
+                                            <Label Text="{Binding Ulei2}"
+                                                   TextColor="{StaticResource SecondaryTextColor}"
+                                                   FlexLayout.Basis="65%"/>
+
+                                            <Label Text="{Binding Cant3}"
+                                                   TextColor="{StaticResource SecondaryTextColor}"
+                                                   FlexLayout.Basis="10%"/>
+
+                                            <Label Text="picături"
+                                                   TextColor="{StaticResource SecondaryTextColor}"
+                                                   FlexLayout.Basis="25%"/>
+
+                                            <Label Text="{Binding Ulei3}"
+                                                   TextColor="{StaticResource SecondaryTextColor}"
+                                                   FlexLayout.Basis="65%"/>
+
+                                        </FlexLayout>
+                                </ViewCell.View>
+                            </custom:CustomViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                </Frame>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

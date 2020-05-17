@@ -14,6 +14,7 @@ namespace Oleo.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class OilListPage : ContentPage
     {
+        
         public OilListPage()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace Oleo.Views
             var mydetails = e.Item as Oil;
             await Navigation.PushAsync(new OilDetailPage(mydetails.Nume, mydetails.Descriere, mydetails.Proprietati,mydetails.Indicatii, mydetails.Aplicare, mydetails.Atentie));
         }
+
 
         private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -39,5 +41,7 @@ namespace Oleo.Views
 
 
         }
+
+      
     }
 }

@@ -4,58 +4,109 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Oleo.Views.AddBlend">
-    <ContentPage.Content>
+             x:Class="Oleo.Views.AddBlend"
+             Visual="Material">
+    <ContentPage.Content >
         <ScrollView>
-            <StackLayout Margin="20,20,20,20">
-            
-            <StackLayout>
-                <Image Source="form.png"
-                       HeightRequest="100"/>
+            <StackLayout Spacing="20"
+                         Padding="30">
+            <Label Text="Crează-ti propriul blend unic!"
+                   TextColor="{StaticResource TextColor}"
+                   FontFamily="LightItalic"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
                 
-                <Entry x:Name="numeEntry"  Placeholder="Numele noului blend"/>
-                
-                <Picker x:Name="ulei1Picker"
-                        Title="Alege primul ingredient" 
-                        ItemsSource="{Binding Ingredients}"
-                        ItemDisplayBinding="{Binding Value}"
-                        SelectedItem ="{Binding SelectedIngredient1}"/>
-                <Entry x:Name="cant1Entry" Placeholder="Numarul de picuri:" Keyboard="Numeric"/>
-               
-                
-                
-                <Picker x:Name="ulei2Picker"
-                        Title="Alege al doilea ingredient" 
-                        ItemsSource="{Binding Ingredients}"
-                        ItemDisplayBinding="{Binding Value}"
-                        SelectedItem="{Binding SelectedIngredient2}"/>
-                <Entry x:Name="cant2Entry" Placeholder="Numarul de picuri: " Keyboard="Numeric"/>
+            <FlexLayout Direction="Row"
+                        Wrap="Wrap"
+                        JustifyContent="SpaceBetween"
+                        AlignItems="Start"
+                        Padding="10"
+                        Margin="10">
+                    
+                    
+                    <Entry x:Name="numeEntry"  
+                           Placeholder="Numele noului blend:"
+                           PlaceholderColor="{StaticResource SecondaryDarkColor}"
+                           TextColor="{StaticResource PrimaryDarkColor}"
+                           FlexLayout.Basis="100%"/>
 
-               
-                <Picker x:Name="ulei3Picker"
-                        Title="Alege al treilea ingredient" 
-                        ItemsSource="{Binding Ingredients}"
-                        ItemDisplayBinding="{Binding Value}"
-                        SelectedItem="{Binding SelectedIngredient3}"/>
+                    <Entry x:Name="cant1Entry" 
+                           Placeholder="Picuri:" 
+                           PlaceholderColor="{StaticResource SecondaryDarkColor}"
+                           TextColor="{StaticResource PrimaryDarkColor}"
+                           Keyboard="Numeric"
+                           FlexLayout.Basis="30%"/>
+                    
+                    <Picker x:Name="ulei1Picker"
+                            TextColor="{StaticResource PrimaryDarkColor}"
+                            TitleColor="{StaticResource  SecondaryDarkColor}"
+                            Title="Primul ingredient:" 
+                            ItemsSource="{Binding Ingredients}"
+                            ItemDisplayBinding="{Binding Value}"
+                            SelectedItem ="{Binding SelectedIngredient1}"
+                            FlexLayout.Basis="60%"/>
+
+                    <Entry  x:Name="cant2Entry" 
+                            Placeholder="Picuri: " 
+                            PlaceholderColor="{StaticResource SecondaryDarkColor}"
+                           TextColor="{StaticResource PrimaryDarkColor}"
+                            Keyboard="Numeric"
+                            FlexLayout.Basis="30%"/>
+
+                    <Picker x:Name="ulei2Picker"
+                            TextColor="{StaticResource PrimaryDarkColor}"
+                            TitleColor="{StaticResource  SecondaryDarkColor}"
+                            Title="Al doilea ingredient:" 
+                            ItemsSource="{Binding Ingredients}"
+                            ItemDisplayBinding="{Binding Value}"
+                            SelectedItem="{Binding SelectedIngredient2}"
+                            FlexLayout.Basis="60%"/>
+                    
+                    <Entry  x:Name="cant3Entry" 
+                            Placeholder="Picuri: " 
+                            PlaceholderColor="{StaticResource SecondaryDarkColor}"
+                           TextColor="{StaticResource PrimaryDarkColor}"
+                            Keyboard="Numeric"
+                            FlexLayout.Basis="30%"
+                            Margin="0,0,0,10"/>
+                    
+                    <Picker x:Name="ulei3Picker"
+                            TextColor="{StaticResource PrimaryDarkColor}"
+                            TitleColor="{StaticResource  SecondaryDarkColor}"
+                            Title="Al treilea ingredient:" 
+                            ItemsSource="{Binding Ingredients}"
+                            ItemDisplayBinding="{Binding Value}"
+                            SelectedItem="{Binding SelectedIngredient3}"
+                            FlexLayout.Basis="60%"/>
+
+                   
+                    <Editor x:Name="descriereEntry" 
+                            Placeholder="Descrierea blendului:"
+                           PlaceholderColor="{StaticResource SecondaryDarkColor}"
+                           TextColor="{StaticResource PrimaryDarkColor}"
+                            FlexLayout.Basis="100%"/>
+                </FlexLayout>
                 
-                <Entry x:Name="cant3Entry" Placeholder="Numarul de picuri:" Keyboard="Numeric"/>
-                <Entry x:Name="descriereEntry" Placeholder="Descrierea blendului:"/>
-        </StackLayout>
-            <StackLayout Margin="80,30,80,30">
                 <Button Text="Salveaza"
-                    x:Name="saveButton"
-                    Clicked="SaveButton_Clicked"/>
+                        x:Name="saveButton"
+                        Clicked="SaveButton_Clicked"
+                        ImageSource="donne"
+                        HorizontalOptions="Center"
+                            />
+                    
+                    
+                    <Label  x:Name="ulei1Entry" 
+                            Text="{Binding MyIngredient1}"
+                            TextColor="White"/>
+                    <Label  Text="{Binding MyIngredient2}"
+                            TextColor="White"
+                            x:Name="ulei2Entry" />
+                    <Label Text="{Binding MyIngredient3}"
+                           TextColor="White"
+                           x:Name="ulei3Entry" />   
+               
             </StackLayout>
-            <Label x:Name="ulei1Entry" 
-                   Text="{Binding MyIngredient1}"
-                       TextColor="White"/>
-            <Label Text="{Binding MyIngredient2}"
-                       TextColor="White"
-                    x:Name="ulei2Entry" />
-            <Label Text="{Binding MyIngredient3}"
-                       TextColor="White"
-                    x:Name="ulei3Entry" />
-        </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

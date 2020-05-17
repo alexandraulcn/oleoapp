@@ -23,7 +23,8 @@ namespace Oleo.Droid
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-           
+          
+            global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
 
             string fileName = "blends_db.db3";
             string folderPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);

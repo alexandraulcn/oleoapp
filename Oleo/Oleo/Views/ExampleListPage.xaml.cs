@@ -19,5 +19,6 @@ namespace Oleo.Views
             InitializeComponent();
             BindingContext = new ExampleListViewModel();
         }
+
     }
 }
