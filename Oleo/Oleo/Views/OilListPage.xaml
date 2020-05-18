@@ -26,13 +26,12 @@
                           IsPullToRefreshEnabled="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <custom:CustomViewCell SelectedItemBackgroundColor="{StaticResource SecondaryColor}">
+                            <custom:CustomViewCell SelectedItemBackgroundColor="{StaticResource SecondaryLightColor}">
                                 <ViewCell.View>
                                     <Label Text="{Binding Nume}"
-                                       
-                                       FontSize="Medium"
-                                       VerticalOptions="CenterAndExpand"
-                                       TextColor="{StaticResource SecondaryTextColor}"/>
+                                           FontSize="Medium"
+                                           VerticalOptions="CenterAndExpand"
+                                           TextColor="{StaticResource SecondaryTextColor}"/>
                                 </ViewCell.View>
                             </custom:CustomViewCell>
                         </DataTemplate>

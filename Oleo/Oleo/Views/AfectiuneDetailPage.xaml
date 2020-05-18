@@ -24,7 +24,7 @@
                         <Label x:Name="DescriereAfectiune"  
                                FontSize="Medium"
                                FontFamily="LightItalic"
-                               TextColor="{StaticResource SecondaryTextColor}"/>
+                               TextColor="{StaticResource TextColor}"/>
                     </StackLayout>
                 </Frame>
 
@@ -32,7 +32,7 @@
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
                     <StackLayout>
-                        <Label Text="Recomandari"
+                        <Label Text="Recomandări:"
                                FontSize="Medium"
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>
@@ -47,7 +47,7 @@
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
                     <StackLayout>
-                        <Label Text="Aplicare"
+                        <Label Text="Aplicare:"
                                FontSize="Medium"
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>

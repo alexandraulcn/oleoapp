@@ -24,15 +24,13 @@
                       ItemSelected="BlendListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                            <custom:CustomViewCell SelectedItemBackgroundColor="{StaticResource SecondaryColor}">
+                            <custom:CustomViewCell SelectedItemBackgroundColor="{StaticResource SecondaryLightColor}">
                                 <ViewCell.View>
-                                    <Label 
-                                   Text="{Binding Nume}"
-                                   FontSize="Medium"
-                                   FontAttributes="Bold"
-                                   VerticalOptions="CenterAndExpand"
-                                   VerticalTextAlignment="Start"
-                                   TextColor="{StaticResource SecondaryTextColor}"/>
+                                    <Label Text="{Binding Nume}"
+                                           FontSize="Medium"
+                                           VerticalOptions="CenterAndExpand"
+                                           VerticalTextAlignment="Start"
+                                           TextColor="{StaticResource SecondaryTextColor}"/>    
                                 </ViewCell.View>
                             </custom:CustomViewCell>
                         </DataTemplate>

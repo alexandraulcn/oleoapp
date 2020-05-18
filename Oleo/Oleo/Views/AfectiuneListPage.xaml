@@ -31,14 +31,13 @@
                           IsPullToRefreshEnabled="True">
                     <ListView.ItemTemplate>
                 <DataTemplate>
-                            <custom:CustomViewCell SelectedItemBackgroundColor="{StaticResource SecondaryColor}">
+                            <custom:CustomViewCell SelectedItemBackgroundColor="{StaticResource SecondaryLightColor}">
                                 <ViewCell.View>
                                     <Grid>
                                         <Label Text="{Binding Denumire}"
-                                           FontSize="Medium"
-                                           
-                                           VerticalOptions="CenterAndExpand"
-                                           TextColor="{StaticResource SecondaryTextColor}"
+                                               FontSize="Medium"
+                                               VerticalOptions="CenterAndExpand"
+                                               TextColor="{StaticResource SecondaryTextColor}"
                                        />
                                     </Grid>
                                 </ViewCell.View>

@@ -5,12 +5,290 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Oleo.Views.CopiiPage"
-             Visual="Material">
+             Visual="Material"
+             BackgroundColor= "#fafafa">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20"
+                         Spacing="20">
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <Label FontSize="Medium"
+                           FontFamily="Italic"
+                           HorizontalTextAlignment="Center"
+                           TextColor="{StaticResource TextColor}"
+                           Text="Indiferent dacă aveți de-a face cu sezonul rece și gripa, alergii, anxietate, probleme cu somnul sau probleme similare de sănătate și sănătate, uleiurile esențiale pot fi un plus minunat la trusa de instrumente a mamelor ocupate! Dar utilizarea uleiurilor esențiale în siguranță rămâne cel mai important aspect!"/>
+                </Frame>
+
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <FlexLayout Direction="Row"
+                                Wrap="Wrap"
+                                JustifyContent="SpaceBetween"
+                                AlignItems="Start">
+                        <Image Source="dont.png"
+                               FlexLayout.Basis="7%"/>
+                        <Label Text="Nu administrati intern uleiuri copiilor."
+                               FontAttributes="Bold"
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               FlexLayout.Basis="90%"/>
+                        <Image Source="dont.png"
+                               FlexLayout.Basis="7%"/>
+                        <Label Text="Nu puneți uleiuri în canalul urechii, în ochi, în jurul feței sau al gurii."
+                               FontAttributes="Bold"
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               FlexLayout.Basis="90%"/>
+                        <Image Source="dont.png"
+                               FlexLayout.Basis="7%"/>
+                        <Label Text="Nu aplicați uleiuri nediluate."
+                               FontAttributes="Bold"
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               FlexLayout.Basis="90%"/>
+                        <Image Source="dont.png"
+                               FlexLayout.Basis="7%"/>
+                        <Label Text="Nu aplicați pe bebeluși mai mici de 6 luni."
+                               FontAttributes="Bold"
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               FlexLayout.Basis="90%"/>
+                    </FlexLayout>
+                </Frame>
+
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <FlexLayout Direction="Row"
+                                Wrap="Wrap"
+                                JustifyContent="SpaceBetween"
+                                AlignItems="Start">
+                        <Image Source="yes.png"
+                               FlexLayout.Basis="7%"/>
+                        <Label Text="Folosiți uleiuri esențiale de 
+                               
+                               calitate."
+                               FontAttributes="Bold"
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               FlexLayout.Basis="90%"/>
+                        <Image Source="yes.png"
+                               FlexLayout.Basis="7%"/>
+                        <Label Text="Fiți conștienți de efectele adverse."
+                               FontAttributes="Bold"
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               FlexLayout.Basis="90%"/>
+                        <Image Source="yes.png"
+                               FlexLayout.Basis="7%"/>
+                        <Label Text="Diluați uleiurile corect."
+                               FontAttributes="Bold"
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               FlexLayout.Basis="90%"/>
+                        <Image Source="yes.png"
+                               FlexLayout.Basis="7%"/>
+                        <Label Text="Citiți despre uleiuri înainte."
+                               FontAttributes="Bold"
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               FlexLayout.Basis="90%"/>
+                    </FlexLayout>
+                </Frame>
+
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <FlexLayout Direction="Row"
+                        Wrap="Wrap"
+                        JustifyContent="SpaceBetween"
+                        AlignItems="Start">
+                        <Label Text="Uleiuri care nu sunt sigure pentru copiii sub 2 ani exceptând difuzarea:"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Large"
+                               TextColor="{StaticResource SecondaryTextColor}"
+                               FlexLayout.Basis="100%"
+                               Padding="10"/>
+
+                        <Label Text="Busuioc"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Piper negru"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Salvie Tămâioasă"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Cuișoare"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Ghimbir"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Copaiba"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Tămâie"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Lemongrass"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Grefruit"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Oregano"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Patchouli"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Spearmint"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Cimbru"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Arbore de ceai"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Valeriană"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Ylang Ylang"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Pentru uleiuri sigure, utilizați o diluție de 2-3% sau mai mică."
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               HorizontalTextAlignment="Center"
+                               FlexLayout.Basis="100%"
+                               Padding="10"/>
+                        
+                    </FlexLayout>
+                </Frame>
+
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <FlexLayout Direction="Row"
+                        Wrap="Wrap"
+                        JustifyContent="SpaceBetween"
+                        AlignItems="Start">
+                        <Label Text="Uleiuri care nu sunt sigure pentru copiii sub 6 ani:"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Large"
+                               TextColor="{StaticResource SecondaryTextColor}"
+                               FlexLayout.Basis="100%"
+                               Padding="10"/>
+
+                        <Label Text="Anason"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Cardamon"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Fenicul"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Mirt"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Peppermint"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Salvie"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        <Label Text="Cuișoare"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="{StaticResource TextColor}"
+                               FontFamily="LightItalic"
+                               FlexLayout.Basis="50%"/>
+                        
+                       
+                        <Label Text="Pentru uleiuri sigure, utilizați o diluție de 3% sau mai mică."
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               HorizontalTextAlignment="Center"
+                               FlexLayout.Basis="100%"
+                               Padding="10"/>
+                    </FlexLayout>
+                </Frame>
+                <Button Text="Cum diluez CORECT?"
+                        Clicked="OnButton_Clicked"
+                        HorizontalOptions="Center"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

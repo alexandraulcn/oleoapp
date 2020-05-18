@@ -11,7 +11,7 @@
     
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="10"
+            <StackLayout Padding="20"
                          Spacing="20">
                 <Label Text="Beneficiile uleiurilor esențiale"
                        HorizontalTextAlignment="Center"
@@ -38,10 +38,13 @@ Plantele aromatice au jucat un rol important in civilizatia umana. "/>
                     <StackLayout>
                         <Image Source="beneficii.jpg"
                                VerticalOptions="Center"
-                               Aspect="AspectFill"/>
+                               Aspect="AspectFill"
+                               HeightRequest="200"
+                               
+                               WidthRequest="0.8"/>
                         <Label FontSize="Medium"
-                           TextColor="{StaticResource SecondaryTextColor}"
-                           Text="  Dintotdeauna, uleiurile esențiale au fost parte a celebrării vieții si a morții, a iubirii si a sănătații. De la inceputurile timpurilor, uleiurile extrase din plantele aromatice au fost recunoscute ca cele mai eficiente medicamente.
+                               TextColor="{StaticResource SecondaryTextColor}"
+                               Text="  Dintotdeauna, uleiurile esențiale au fost parte a celebrării vieții si a morții, a iubirii si a sănătații. De la inceputurile timpurilor, uleiurile extrase din plantele aromatice au fost recunoscute ca cele mai eficiente medicamente.
 Astăzi, utilizarea uleiurilor esențiale, insăși esența plantelor, este mai mult decat știinta, este arta de a echilibra, armoniza și a promova sănătatea trupului, a minții si a spiritului."/>
                     </StackLayout>
                 </Frame>

@@ -75,8 +75,7 @@
 
         <Tab Title="Utilizare"
              Route="utilizare"
-             Icon="ghid.png"
-             IsTabStop="False">
+             Icon="ghid.png">
             <ShellContent Route="aplicareExterna"
                           Title="Aplicare Externă"
                           ContentTemplate="{DataTemplate views:AplicareExternaPage}"
@@ -85,7 +84,10 @@
                           Title="Aplicare Internă"
                           ContentTemplate="{DataTemplate views:AplicareInternaPage}"
                           Style="{StaticResource OleoShell}"/>
-
+            <ShellContent Route="diluare"
+                          Title="Diluarea"
+                          ContentTemplate="{DataTemplate views:DiluarePage}"
+                          Style="{StaticResource OleoShell}"/>
         </Tab>
 
         <ShellContent Route="oils"

@@ -33,7 +33,7 @@
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
                     <StackLayout>
-                        <Label Text="Proprietati"
+                        <Label Text="Proprietăți:"
                                FontSize="Medium"
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>
@@ -47,7 +47,7 @@
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
                     <StackLayout>
-                        <Label Text="Indicatii"
+                        <Label Text="Indicații:"
                                FontSize="Medium"
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>
@@ -61,7 +61,7 @@
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
                     <StackLayout>
-                        <Label Text="Aplicare"
+                        <Label Text="Aplicare:"
                                FontSize="Medium"
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>
@@ -75,7 +75,7 @@
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
                     <StackLayout>
-                        <Label Text="Atentie"
+                        <Label Text="Atenționări:"
                                FontSize="Medium"
                                FontFamily="Bold"
                                TextColor="{StaticResource SecondaryColor}"/>

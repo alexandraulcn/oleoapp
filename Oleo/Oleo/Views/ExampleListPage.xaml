@@ -11,7 +11,7 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="10">
+            <StackLayout Padding="50">
                 <Frame Padding="15"
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">

@@ -6,10 +6,10 @@
              mc:Ignorable="d"
              x:Class="Oleo.Views.AplicareExternaPage"
              Visual="Material"
-             BackgroundColor= "#e3f2fd">
+             BackgroundColor= "#fafafa">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="10"
+            <StackLayout Padding="30"
                          Spacing="20">
                 <Frame Padding="15"
                        HasShadow="True"
@@ -38,7 +38,7 @@
                                TextColor="{StaticResource SecondaryTextColor}"
                                Text="Recomandăm achiziționarea unui difuzer, există o varietate largă pe piață. Întotdeauna să folosiți un difuzor cu aer rece pentru a nu dăuna moleculelor. Difuzorul poate fi mutat dintr-o cameră în alta și utilizat de 2 ori pe zi timp de 15 minute nu doar pentru a mirosi frumos în casă, ci și prin a împrospătă aerul în casă."/>
 
-                        <Image Source="image1.jpg"/>
+                        
                     </StackLayout>
                 </Frame>
                 <Frame Padding="15"
@@ -55,7 +55,22 @@
                                Text="Dacă nu cunoașteți uleiurile și nu știți ce efecte pot avea asupra tipului vostru de piele, puteți începe prin diluarea lor. Încercați-le și vă veți da seama pe care să le diluați și pe care nu. Daca le aplicați pe piele, iar pielea se innroseste, se înfierbântă, diluați cu o parte ulei de măsline sau ulei de cocos. Pielea s-a înroșit din cauza faptului că uleiul  a adus repede sângele la suprafață pielii"/>
                     </StackLayout>
                 </Frame>
-
+                
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <StackLayout>
+                        <Label Text="Uleiurile esențiale necesită diluare pentru a preveni reacțiile adverse. De regulă generală, ar trebui să mențineți concentrația uleiurilor esențiale sub 5%."
+                               TextColor="{StaticResource SecondaryDarkColor}"
+                               FontSize="Medium"
+                               HorizontalTextAlignment="Center"/>
+                        <Label Text="1% = 6 picături de ulei esențial la 25 ml de ulei purtător."
+                               TextColor="{StaticResource SecondaryTextColor}"
+                               FontSize="Medium"
+                               HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                
                 <Frame Padding="15"
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">

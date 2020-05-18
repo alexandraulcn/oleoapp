@@ -36,7 +36,7 @@ namespace Oleo.Views
             if (string.IsNullOrWhiteSpace(e.NewTextValue))
                 OilListView.ItemsSource = _container.Oils;
             else
-                OilListView.ItemsSource = _container.Oils.Where(i => i.Nume.ToLower().Contains(e.NewTextValue.ToLower()));
+                OilListView.ItemsSource = _container.Oils.Where(i => i.Nume.ToLower().StartsWith(e.NewTextValue.ToLower()));
             OilListView.EndRefresh();
 
 

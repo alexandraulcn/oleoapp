@@ -182,4 +182,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\header.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dont.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yes.png" />
+  </ItemGroup>
 </Project>

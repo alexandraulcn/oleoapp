@@ -10,7 +10,7 @@
         <ScrollView>
             <StackLayout Spacing="20"
                          Padding="30">
-            <Label Text="Crează-ti propriul blend unic!"
+            <Label Text="Noul meu blend unic!"
                    TextColor="{StaticResource TextColor}"
                    FontFamily="LightItalic"
                    FontSize="Large"
@@ -26,20 +26,22 @@
                     
                     
                     <Entry x:Name="numeEntry"  
-                           Placeholder="Numele noului blend:"
+                           Placeholder="Numele blendului:"
                            PlaceholderColor="{StaticResource SecondaryDarkColor}"
-                           TextColor="{StaticResource PrimaryDarkColor}"
-                           FlexLayout.Basis="100%"/>
+                           TextColor="{StaticResource SecondaryTextColor}"
+                           FlexLayout.Basis="100%"
+                           Margin="0,0,0,10"/>
 
                     <Entry x:Name="cant1Entry" 
                            Placeholder="Picuri:" 
                            PlaceholderColor="{StaticResource SecondaryDarkColor}"
-                           TextColor="{StaticResource PrimaryDarkColor}"
+                           TextColor="{StaticResource SecondaryTextColor}"
                            Keyboard="Numeric"
-                           FlexLayout.Basis="30%"/>
+                           FlexLayout.Basis="30%"
+                           Margin="0,0,0,10"/>
                     
                     <Picker x:Name="ulei1Picker"
-                            TextColor="{StaticResource PrimaryDarkColor}"
+                            TextColor="{StaticResource SecondaryTextColor}"
                             TitleColor="{StaticResource  SecondaryDarkColor}"
                             Title="Primul ingredient:" 
                             ItemsSource="{Binding Ingredients}"
@@ -50,12 +52,13 @@
                     <Entry  x:Name="cant2Entry" 
                             Placeholder="Picuri: " 
                             PlaceholderColor="{StaticResource SecondaryDarkColor}"
-                           TextColor="{StaticResource PrimaryDarkColor}"
+                            TextColor="{StaticResource SecondaryTextColor}"
                             Keyboard="Numeric"
-                            FlexLayout.Basis="30%"/>
+                            FlexLayout.Basis="30%"
+                             Margin="0,0,0,10"/>
 
                     <Picker x:Name="ulei2Picker"
-                            TextColor="{StaticResource PrimaryDarkColor}"
+                            TextColor="{StaticResource SecondaryTextColor}"
                             TitleColor="{StaticResource  SecondaryDarkColor}"
                             Title="Al doilea ingredient:" 
                             ItemsSource="{Binding Ingredients}"
@@ -66,13 +69,13 @@
                     <Entry  x:Name="cant3Entry" 
                             Placeholder="Picuri: " 
                             PlaceholderColor="{StaticResource SecondaryDarkColor}"
-                           TextColor="{StaticResource PrimaryDarkColor}"
+                            TextColor="{StaticResource SecondaryTextColor}"
                             Keyboard="Numeric"
                             FlexLayout.Basis="30%"
                             Margin="0,0,0,10"/>
                     
                     <Picker x:Name="ulei3Picker"
-                            TextColor="{StaticResource PrimaryDarkColor}"
+                            TextColor="{StaticResource SecondaryTextColor}"
                             TitleColor="{StaticResource  SecondaryDarkColor}"
                             Title="Al treilea ingredient:" 
                             ItemsSource="{Binding Ingredients}"
@@ -82,9 +85,9 @@
 
                    
                     <Editor x:Name="descriereEntry" 
-                            Placeholder="Descrierea blendului:"
-                           PlaceholderColor="{StaticResource SecondaryDarkColor}"
-                           TextColor="{StaticResource PrimaryDarkColor}"
+                            Placeholder="Descriere și utilizare:"
+                            PlaceholderColor="{StaticResource SecondaryDarkColor}"
+                            TextColor="{StaticResource SecondaryTextColor}"
                             FlexLayout.Basis="100%"/>
                 </FlexLayout>
                 

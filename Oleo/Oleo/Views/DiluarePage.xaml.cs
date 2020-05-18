@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace Oleo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DiluarePage : ContentView
+    public partial class DiluarePage : ContentPage
     {
         public DiluarePage()
         {
