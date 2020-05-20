@@ -285,9 +285,7 @@
                                Padding="10"/>
                     </FlexLayout>
                 </Frame>
-                <Button Text="Cum diluez CORECT?"
-                        Clicked="OnButton_Clicked"
-                        HorizontalOptions="Center"/>
+               
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

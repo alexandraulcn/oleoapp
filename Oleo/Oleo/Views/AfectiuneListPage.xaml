@@ -31,7 +31,7 @@
                           IsPullToRefreshEnabled="True">
                     <ListView.ItemTemplate>
                 <DataTemplate>
-                            <custom:CustomViewCell SelectedItemBackgroundColor="{StaticResource SecondaryLightColor}">
+                            <custom:CustomViewCell SelectedItemBackgroundColor="White">
                                 <ViewCell.View>
                                     <Grid>
                                         <Label Text="{Binding Denumire}"

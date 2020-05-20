@@ -36,7 +36,7 @@
                                FontAttributes="Bold"
                                FlexLayout.Basis="20%"/>
                         
-                        <Label Text="picături"
+                        <Label Text="picături   "
                                FontSize="Medium"
                                FontAttributes="Bold"
                                FontFamily="Bold"
@@ -57,7 +57,7 @@
                                TextColor="{StaticResource TextColor}"
                                FlexLayout.Basis="20%"/>
                         
-                        <Label Text="picături"
+                        <Label Text="picături   "
                                FontSize="Medium"
                                FontAttributes="Bold"
                                FontFamily="Bold"
@@ -78,7 +78,7 @@
                                FontAttributes="Bold"
                                FlexLayout.Basis="20%"/>
                         
-                        <Label Text="picături"
+                        <Label Text="picături   "
                                FontSize="Medium"
                                FontFamily="Bold"
                                FontAttributes="Bold"

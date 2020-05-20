@@ -9,7 +9,7 @@
              Visual="Material">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="30"
+            <StackLayout Padding="20"
                          Spacing="20">
                 <Frame Padding="15"
                        HasShadow="True"
@@ -37,6 +37,7 @@
                     <StackLayout>
                         <Label FontSize="Medium"
                                FontFamily="LightItalic"
+                               HorizontalTextAlignment="Center"
                                TextColor="{StaticResource TextColor}"
                                Text="Luați-vă uleiul de mentă, acesta este un experiment haios. Picurați 1 picătură de ulei în palmă, puneți vârful limbii în uleiul de menta. Puneți vârful limbii în cerul gurii. Inhalați de 3-4 ori, apoi închideți gura și respirați pe nas. Veți simți cum sinusurile se vor deschide în numai câteva secunde."/>
                     </StackLayout>

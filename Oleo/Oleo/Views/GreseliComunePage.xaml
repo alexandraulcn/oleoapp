@@ -24,7 +24,7 @@
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
                     <StackLayout>
-                        <Label Text="#1 Aplicarea uleiurilor intr-o locatie gresita"
+                        <Label Text="#1 Aplicarea uleiurilor într-o zonă greșită"
                                FontSize="Large"
                                 HorizontalTextAlignment="Center"
                                FontFamily="Regular"
@@ -32,6 +32,39 @@
                         <Label Text="Aveți grijă să aplicați corect uleiuri esențiale. În general, uleiurile trebuie aplicate în patru locații principale: încheieturile, gleznele, degetele și în spatele urechilor. Cu toate acestea, uleiurile funcționează cel mai bine atunci când sunt masate pe locul de acupunctură corespunzător - dacă doriți să vă atenuați migrenele, de exemplu, căutați unde, în mod special, să aplicați acea picătură de ulei. În mod similar, nu aplicați uleiuri pe tot corpul sau pe față, în caz că aveți o reacție adversă. Începeți cu un mic test pe o zonă mai puțin sensibilă."
                                FontSize="Medium"
                                TextColor="{StaticResource SecondaryTextColor}"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <StackLayout>
+                        <Label Text="#2 Utilizarea uleiurilor fotosensibile la soare"
+                               FontSize="Large"
+                                HorizontalTextAlignment="Center"
+                               FontFamily="Regular"
+                               TextColor="{StaticResource TextColor}"/>
+                        <Label Text="Unele uleiuri esențiale sunt fotosensibile, ceea ce înseamnă că au o reacție chimică la lumina soarelui. Dacă aplicați uleiuri fotosensibile pe piele și apoi expuneți pielea la lumina soarelui, acea reacție chimică poate produce roșeață, iritare, mâncărime și, în cazuri severe, bășici și arsuri reale. Aveți grijă să evitați aplicarea uleiurilor fotosensibile (inclusiv uleiuri citrice presate la rece precum lămâie, lime, grepfrut, portocale și uleiuri de bergamotă) înainte de a petrece timpul la soare. În schimb, aplicați aceste uleiuri sau amestecuri care conțin aceste uleiuri seara, pentru a evita orice reacții fototoxice."
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryTextColor}"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Padding="15"
+                       HasShadow="True"
+                       BorderColor="{StaticResource PrimaryDarkColor}">
+                    <StackLayout>
+                        <Label Text="#2 Nediluarea uleiurilor"
+                               FontSize="Large"
+                                HorizontalTextAlignment="Center"
+                               FontFamily="Regular"
+                               TextColor="{StaticResource TextColor}"/>
+                        <Label Text="Uleiurile esențiale sunt foarte concentrate și multe dintre ele pot irita pielea dacă sunt aplicate pure (sau fără a fi diluate). Diluarea uleiurilor esențiale cu un ulei purtător este un mod ușor de a reduce riscul de iritare."
+                               FontSize="Medium"
+                               TextColor="{StaticResource SecondaryTextColor}"/>
+                        <Button Text="Cum diluez CORECT?"
+                                Clicked="OnButton_Clicked"
+                                HorizontalOptions="Center"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>

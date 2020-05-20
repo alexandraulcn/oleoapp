@@ -9,13 +9,15 @@
     <ContentPage.Content >
         <ScrollView>
             <StackLayout Spacing="20"
-                         Padding="30">
+                         Padding="10">
             <Label Text="Noul meu blend unic!"
                    TextColor="{StaticResource TextColor}"
-                   FontFamily="LightItalic"
+                   FontFamily="Italic"
                    FontSize="Large"
                    HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
+                   VerticalOptions="Center"
+                   Padding="10"
+                   />
                 
             <FlexLayout Direction="Row"
                         Wrap="Wrap"
@@ -31,31 +33,26 @@
                            TextColor="{StaticResource SecondaryTextColor}"
                            FlexLayout.Basis="100%"
                            Margin="0,0,0,10"/>
-
-                    <Entry x:Name="cant1Entry" 
-                           Placeholder="Picuri:" 
-                           PlaceholderColor="{StaticResource SecondaryDarkColor}"
-                           TextColor="{StaticResource SecondaryTextColor}"
-                           Keyboard="Numeric"
-                           FlexLayout.Basis="30%"
-                           Margin="0,0,0,10"/>
-                    
+                
                     <Picker x:Name="ulei1Picker"
                             TextColor="{StaticResource SecondaryTextColor}"
                             TitleColor="{StaticResource  SecondaryDarkColor}"
                             Title="Primul ingredient:" 
+                            FontSize="Medium"
                             ItemsSource="{Binding Ingredients}"
                             ItemDisplayBinding="{Binding Value}"
                             SelectedItem ="{Binding SelectedIngredient1}"
-                            FlexLayout.Basis="60%"/>
+                            FlexLayout.Basis="60%"/> 
+                
+                    <Entry x:Name="cant1Entry" 
+                           Placeholder="Picături:" 
+                           PlaceholderColor="{StaticResource SecondaryDarkColor}"
+                           FontSize="Medium"
+                           TextColor="{StaticResource SecondaryTextColor}"
+                           Keyboard="Numeric"
+                           FlexLayout.Basis="30%"
+                           Margin="0,0,0,10"/>
 
-                    <Entry  x:Name="cant2Entry" 
-                            Placeholder="Picuri: " 
-                            PlaceholderColor="{StaticResource SecondaryDarkColor}"
-                            TextColor="{StaticResource SecondaryTextColor}"
-                            Keyboard="Numeric"
-                            FlexLayout.Basis="30%"
-                             Margin="0,0,0,10"/>
 
                     <Picker x:Name="ulei2Picker"
                             TextColor="{StaticResource SecondaryTextColor}"
@@ -65,15 +62,15 @@
                             ItemDisplayBinding="{Binding Value}"
                             SelectedItem="{Binding SelectedIngredient2}"
                             FlexLayout.Basis="60%"/>
-                    
-                    <Entry  x:Name="cant3Entry" 
-                            Placeholder="Picuri: " 
+
+                    <Entry  x:Name="cant2Entry" 
+                            Placeholder="Picături: " 
                             PlaceholderColor="{StaticResource SecondaryDarkColor}"
                             TextColor="{StaticResource SecondaryTextColor}"
                             Keyboard="Numeric"
                             FlexLayout.Basis="30%"
-                            Margin="0,0,0,10"/>
-                    
+                             Margin="0,0,0,10"/>
+
                     <Picker x:Name="ulei3Picker"
                             TextColor="{StaticResource SecondaryTextColor}"
                             TitleColor="{StaticResource  SecondaryDarkColor}"
@@ -82,6 +79,16 @@
                             ItemDisplayBinding="{Binding Value}"
                             SelectedItem="{Binding SelectedIngredient3}"
                             FlexLayout.Basis="60%"/>
+
+                    <Entry  x:Name="cant3Entry" 
+                            Placeholder="Picături: " 
+                            PlaceholderColor="{StaticResource SecondaryDarkColor}"
+                            TextColor="{StaticResource SecondaryTextColor}"
+                            Keyboard="Numeric"
+                            FlexLayout.Basis="30%"
+                            Margin="0,0,0,10"/>
+                    
+                   
 
                    
                     <Editor x:Name="descriereEntry" 

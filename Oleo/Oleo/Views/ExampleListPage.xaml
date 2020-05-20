@@ -21,6 +21,7 @@
                           SeparatorVisibility="Default"
                           SeparatorColor="{StaticResource SecondaryDarkColor}"
                           RowHeight="100"
+                          ItemSelected="ListView_ItemSelected"
                           >
                     <ListView.ItemTemplate>
                         <DataTemplate>

@@ -9,7 +9,7 @@
              BackgroundColor= "#fafafa">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="30"
+            <StackLayout Padding="20"
                          Spacing="20">
                 <Frame Padding="15"
                        HasShadow="True"

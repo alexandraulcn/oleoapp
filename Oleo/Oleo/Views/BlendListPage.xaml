@@ -24,7 +24,7 @@
                       ItemSelected="BlendListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                            <custom:CustomViewCell SelectedItemBackgroundColor="{StaticResource SecondaryLightColor}">
+                            <custom:CustomViewCell SelectedItemBackgroundColor="White">
                                 <ViewCell.View>
                                     <Label Text="{Binding Nume}"
                                            FontSize="Medium"

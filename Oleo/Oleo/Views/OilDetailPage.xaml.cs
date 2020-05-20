@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Oleo.Models;
+using Oleo.ViewModels;
 
 namespace Oleo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class OilDetailPage : ContentPage
     {
+        
+        
         public OilDetailPage(string Nume, string Descriere, string Proprietati,string Indicatii, string Aplicare, string Atentie)
         {
             InitializeComponent();
@@ -24,5 +28,6 @@ namespace Oleo.Views
             AtentieOil.Text = Atentie;
 
         }
+
     }
 }

@@ -9,7 +9,7 @@
              BackgroundColor= "#fafafa">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="10"
+            <StackLayout Padding="15"
                          Spacing="20">
             
             <Label x:Name="NumeOil" 
@@ -24,6 +24,7 @@
                     <StackLayout>
                         <Label x:Name="DescriereOil"  
                                FontSize="Medium"
+                               HorizontalTextAlignment="Center"
                                TextColor="{StaticResource TextColor}"
                                FontFamily="LightItalic"/>
                     </StackLayout>
@@ -84,6 +85,7 @@
                                TextColor="{StaticResource SecondaryTextColor}"/>
                     </StackLayout>
                 </Frame>
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

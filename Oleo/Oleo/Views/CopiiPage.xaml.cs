@@ -17,9 +17,6 @@ namespace Oleo.Views
             InitializeComponent();
         }
 
-        public void OnButton_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new DiluarePage());
-        }
+        
     }
 }

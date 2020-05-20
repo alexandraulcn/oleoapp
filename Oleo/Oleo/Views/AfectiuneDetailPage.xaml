@@ -9,7 +9,7 @@
              BackgroundColor= "#fafafa">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="10"
+            <StackLayout Padding="15"
                          Spacing="20">
                 <Label x:Name="DenumireAfectiune" 
                        HorizontalTextAlignment="Center"
@@ -23,6 +23,7 @@
                     <StackLayout>
                         <Label x:Name="DescriereAfectiune"  
                                FontSize="Medium"
+                               HorizontalTextAlignment="Center"
                                FontFamily="LightItalic"
                                TextColor="{StaticResource TextColor}"/>
                     </StackLayout>
