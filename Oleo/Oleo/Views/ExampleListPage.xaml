@@ -11,16 +11,22 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="50">
+            <StackLayout Padding="30">
+                <Label Text="Difuzarea a 3 uleiuri este ideală, în cazul în care folosim mai multe acestea, mirosul acestora se pierde și nu mai are efectul dorit. Less is more."
+                       TextColor="{StaticResource TextColor}"
+                       FontFamily="Italic"
+                       FontSize="Medium"
+                       Padding="10"/>
                 <Frame Padding="15"
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
-                    
+                    <StackLayout>
+                       
                     <ListView ItemsSource="{Binding Examples}"
                           x:Name="ExamplesListView"
                           SeparatorVisibility="Default"
                           SeparatorColor="{StaticResource SecondaryDarkColor}"
-                          RowHeight="100"
+                          RowHeight="125"
                           ItemSelected="ListView_ItemSelected"
                           >
                     <ListView.ItemTemplate>
@@ -37,6 +43,7 @@
                                                    FontAttributes="Bold"
                                                    VerticalOptions="CenterAndExpand"
                                                    TextColor="{StaticResource SecondaryDarkColor}"
+                                                   Padding="5"
                                                    FlexLayout.Basis="100%"/>
                                         
                                             <Label Text="{Binding Cant1}"
@@ -81,6 +88,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                    </StackLayout>
                 </Frame>
             </StackLayout>
         </ScrollView>

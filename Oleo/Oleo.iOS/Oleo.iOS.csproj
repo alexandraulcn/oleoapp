@@ -188,4 +188,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\yes.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chart.jpg" />
+  </ItemGroup>
 </Project>

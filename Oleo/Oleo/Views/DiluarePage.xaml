@@ -6,10 +6,20 @@
              mc:Ignorable="d"
              x:Class="Oleo.Views.DiluarePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="30">
+            <Label Text="Tabel de diluare"
+                               FontSize="Large"
+                               FontFamily="Regular"
+                               TextColor="{StaticResource TextColor}"
+                               HorizontalTextAlignment="Center"
+                               Padding="10"/>
+            <Image Source="chart.jpg"/>
+                <Label Text="În tabel este redat numărul de picături de ulei esențial necesar pentru concentrația dorită."
+                       FontSize="Medium"
+                       TextColor="{StaticResource TextColor}"
+                       Padding="10"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
