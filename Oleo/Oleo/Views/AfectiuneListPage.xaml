@@ -21,7 +21,7 @@
                            PlaceholderColor="{StaticResource SecondaryDarkColor}"
                            CancelButtonColor="{StaticResource SecondaryDarkColor}"
                            Margin="10,10,0,10"/>
-                
+
                 <ListView ItemsSource="{Binding Afectiuni}"
                           x:Name="AfectiuniListView"
                           SeparatorVisibility="Default"

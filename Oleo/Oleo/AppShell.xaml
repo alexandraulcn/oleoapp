@@ -32,22 +32,7 @@
         <Style x:Key="OleoShell"
                TargetType="Element"
                BasedOn="{StaticResource BaseStyle}"/>
-        <ResourceDictionary>
-           <!--<Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
-                <Setter Property="Shell.ForegroundColor" Value="White" />
-                <Setter Property="Shell.TitleColor" Value="White" />
-                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
-                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
-            </Style>
-
-            <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
-            <Style TargetType="TabBar" BasedOn="{StaticResource MyBaseStyle}" />-->
-        </ResourceDictionary>
+        
     </Shell.Resources>
 
     <Shell.FlyoutHeader>
@@ -84,10 +69,7 @@
                           Title="Aplicare Internă"
                           ContentTemplate="{DataTemplate views:AplicareInternaPage}"
                           Style="{StaticResource OleoShell}"/>
-            <ShellContent Route="diluare"
-                          Title="Diluarea"
-                          ContentTemplate="{DataTemplate views:DiluarePage}"
-                          Style="{StaticResource OleoShell}"/>
+           
         </Tab>
 
         <ShellContent Route="oils"

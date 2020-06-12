@@ -10,26 +10,13 @@ namespace Oleo
     public partial class AppShell : Xamarin.Forms.Shell
     {
 
-     
-
-        
         public AppShell()
         {
             InitializeComponent();
-            
+
             BindingContext = this;
         }
 
-        
-
-        void OnNavigating(object sender, ShellNavigatingEventArgs e)
-        {
-        }
-
-        void OnNavigated(object sender, ShellNavigatedEventArgs e)
-        {
-        }
-
-
+     
     }
 }

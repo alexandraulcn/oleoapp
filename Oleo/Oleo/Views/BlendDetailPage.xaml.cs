@@ -31,18 +31,27 @@ namespace Oleo.Views
             DescriereBlend.Text = selectedBlend.Descriere;
         }
 
-        private void DeleteButton_Clicked(object sender, EventArgs e)
+        public async void DeleteButton_Clicked(object sender, EventArgs e)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
+            bool answer = await DisplayAlert("Alertă","Sunteți sigur că doriți să ștergeți acest blend?", "Da", "Nu");
+            if (answer == true)
             {
-                conn.CreateTable<Blend>();
-                int rows = conn.Delete(selectedBlend);
+                using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
+                {
+                    conn.CreateTable<Blend>();
+                    int rows = conn.Delete(selectedBlend);
 
-                if (rows < 0)
-                    DisplayAlert("Eroare","Stergerea nu a putut fi realizata", "Ok");
+                    if (rows < 0)
+                        DisplayAlert("Eroare", "Stergerea nu a putut fi realizata", "OK");
+                }
+                Navigation.PopAsync();
             }
-
-            Navigation.PopAsync();
+            else
+            {
+                return;
+            }
+            
+           
         }
     }
 }

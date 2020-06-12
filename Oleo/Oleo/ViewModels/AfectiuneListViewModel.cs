@@ -58,7 +58,7 @@ namespace Oleo.ViewModels
                 Denumire = "Balonare",
                 Descriere = "Balonarea este o tulburare gastrointestinală ce se întâlnește atât la adulți, cât și la copii. În termeni medicali ea poartă numele de meteorism abdominal și este provocat de o masă prea bogată, de consumul de dulciuri și anumite alimente, cât și de tulburări hormonale sau stres. Există, însă, și cazuri în care acest disconfort poate ascunde boli grave, așa că nu trebuie să o tratați cu indiferentă.",
                 Recomandari = "juniper, clary sage, cypress, peppermint, fennel, nutmeg, di-gize",
-                Aplicare= "Cantitatea de ulei înghițit depinde de la ulei la ulei. Adăugați câteva picături din uleiurile recomandate într-un lichid și beți zilnic. Luați o capsulă de peppermint de 3 ori pe zi."
+                Aplicare = "Cantitatea de ulei înghițit depinde de la ulei la ulei. Adăugați câteva picături din uleiurile recomandate într-un lichid și beți zilnic. Luați o capsulă de peppermint de 3 ori pe zi."
             });
 
             Afectiuni.Add(new Afectiune

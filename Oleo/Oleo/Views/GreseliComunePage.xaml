@@ -41,7 +41,7 @@
                     <StackLayout>
                         <Label Text="#2 Utilizarea uleiurilor fotosensibile la soare"
                                FontSize="Large"
-                                HorizontalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>
                         <Label Text="Unele uleiuri esențiale sunt fotosensibile, ceea ce înseamnă că au o reacție chimică la lumina soarelui. Dacă aplicați uleiuri fotosensibile pe piele și apoi expuneți pielea la lumina soarelui, acea reacție chimică poate produce roșeață, iritare, mâncărime și, în cazuri severe, bășici și arsuri reale. Aveți grijă să evitați aplicarea uleiurilor fotosensibile (inclusiv uleiuri citrice presate la rece precum lămâie, lime, grepfrut, portocale și uleiuri de bergamotă) înainte de a petrece timpul la soare. În schimb, aplicați aceste uleiuri sau amestecuri care conțin aceste uleiuri seara, pentru a evita orice reacții fototoxice."

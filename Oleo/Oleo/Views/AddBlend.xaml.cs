@@ -22,11 +22,16 @@ namespace Oleo.Views
            
             
         }
-        void SaveButton_Clicked(object sender, EventArgs e)
+        public void SaveButton_Clicked(object sender, EventArgs e)
         {
-            
-            if (numeEntry.Text == null || cant1Entry.Text == null || ulei1Picker.SelectedItem == null || cant2Entry.Text == null || ulei2Picker.SelectedItem== null
-                || cant3Entry.Text == null || ulei3Picker.SelectedItem == null || descriereEntry.Text == null)
+            bool isNumeEmpty = string.IsNullOrEmpty(numeEntry.Text);
+            bool isCant1Empty = string.IsNullOrEmpty(cant1Entry.Text);
+            bool isCant2Empty = string.IsNullOrEmpty(cant2Entry.Text);
+            bool isCant3Empty = string.IsNullOrEmpty(cant3Entry.Text);
+            bool isDescriereEmpty = string.IsNullOrEmpty(descriereEntry.Text);
+
+            if (isNumeEmpty == true || isCant1Empty == true || ulei1Picker.SelectedItem == null || isCant2Empty == true || ulei2Picker.SelectedItem== null
+                || isCant3Empty == true || ulei3Picker.SelectedItem == null || isDescriereEmpty == true)
             {
                 DisplayAlert("Campuri goale!", "Va rugam completati toate campurile.", "Ok");
             }
@@ -48,6 +53,11 @@ namespace Oleo.Views
                 {
                     conn.CreateTable<Blend>();
                     int rowsAdded = conn.Insert(blend);
+
+                    if (rowsAdded > 0)
+                        DisplayAlert("Succes", "Blend inserat cu succes", "Ok");
+                    else
+                        DisplayAlert("Eroare", "Blendul nu a putut fi salvat", ":(");
                 }
 
                 Navigation.PopAsync();

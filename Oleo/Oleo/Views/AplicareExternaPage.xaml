@@ -68,6 +68,9 @@
                                TextColor="{StaticResource SecondaryTextColor}"
                                FontSize="Medium"
                                HorizontalTextAlignment="Center"/>
+                        <Button Text="tabel de diluare"
+                                Clicked="OnButton_Clicked"
+                                HorizontalOptions="Center"/>
                     </StackLayout>
                 </Frame>
                 
