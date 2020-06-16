@@ -11019,7 +11019,10 @@ namespace Oleo.Droid
 			public const int tooltip_frame_light = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int yes = 2131165320;
+			public const int update = 2131165320;
+			
+			// aapt resource value: 0x7F070089
+			public const int yes = 2131165321;
 			
 			static Drawable()
 			{

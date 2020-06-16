@@ -8,50 +8,36 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Oleo.Models;
 using SQLite;
+using System.IO;
+using Oleo.ViewModels;
+using Oleo.Persistence;
+using Oleo.Services;
 
 namespace Oleo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BlendDetailPage : ContentPage
     {
-        Blend selectedBlend;
-        public BlendDetailPage(Blend selectedBlend)
+        
+        public BlendDetailPage(BlendViewModel viewModel)
         { 
             InitializeComponent();
-
-            this.selectedBlend = selectedBlend;
-
-            NumeBlend.Text = selectedBlend.Nume;
-            Ulei1Blend.Text = selectedBlend.Ulei1;
-            Ulei2Blend.Text = selectedBlend.Ulei2;
-            Ulei3Blend.Text = selectedBlend.Ulei3;
-            Cant1Blend.Text = selectedBlend.Cant1;
-            Cant2Blend.Text = selectedBlend.Cant2;
-            Cant3Blend.Text = selectedBlend.Cant3;
-            DescriereBlend.Text = selectedBlend.Descriere;
-        }
-
-        public async void DeleteButton_Clicked(object sender, EventArgs e)
-        {
-            bool answer = await DisplayAlert("Alertă","Sunteți sigur că doriți să ștergeți acest blend?", "Da", "Nu");
-            if (answer == true)
-            {
-                using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
-                {
-                    conn.CreateTable<Blend>();
-                    int rows = conn.Delete(selectedBlend);
-
-                    if (rows < 0)
-                        DisplayAlert("Eroare", "Stergerea nu a putut fi realizata", "OK");
-                }
-                Navigation.PopAsync();
-            }
-            else
-            {
-                return;
-            }
             
+            var blendingJournal = new SQLiteBlendingJournal(DependencyService.Get<ISQLiteDb>());
+            var pageService = new PageService();
+            
+            ViewModel = new BlendDetailViewModel(viewModel, blendingJournal, pageService);
+            BindingContext = new BlendDetailViewModel(viewModel ?? new BlendViewModel(), blendingJournal, pageService);
            
         }
+
+        public BlendDetailViewModel ViewModel
+        {
+            get { return BindingContext as BlendDetailViewModel; }
+            set { BindingContext = value; }
+        }
+
+
+
     }
 }

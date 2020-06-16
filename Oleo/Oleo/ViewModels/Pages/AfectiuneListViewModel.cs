@@ -6,12 +6,21 @@ using Oleo.Models;
 
 namespace Oleo.ViewModels
 {
-    class AfectiuneListViewModel
+    public class AfectiuneListViewModel :BaseViewModel
     {
-        public List<Afectiune> Afectiuni { get; set; }
+        public ObservableCollection<Afectiune> _afectiuni ;
+        public ObservableCollection<Afectiune> Afectiuni
+        {
+            get { return _afectiuni; }
+            set
+            {
+
+                _afectiuni = value;
+            }
+        }
         public AfectiuneListViewModel()
         {
-            Afectiuni = new List<Afectiune>();
+            Afectiuni = new ObservableCollection<Afectiune>();
             /*Afectiuni.Add(new Afectiune
             {
                 Denumire = "",

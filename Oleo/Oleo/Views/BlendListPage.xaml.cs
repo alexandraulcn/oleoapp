@@ -8,6 +8,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SQLite;
 using Oleo.Models;
+using Oleo.Persistence;
+using Oleo.Services;
+using Oleo.ViewModels;
 
 namespace Oleo.Views
 {
@@ -17,36 +20,28 @@ namespace Oleo.Views
         public BlendListPage()
         {
             InitializeComponent();
-        }
 
-        public void NewBlendToolbarItem_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new AddBlend());
+            var blendingJournal = new SQLiteBlendingJournal(DependencyService.Get<ISQLiteDb>());
+            var pageService = new PageService();
+            ViewModel = new BlendListPageViewModel(blendingJournal, pageService);
         }
 
         protected override void OnAppearing()
         {
+            ViewModel.LoadDataCommand.Execute(null);
             base.OnAppearing();
-
-            using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
-            {
-                conn.CreateTable<Blend>();
-                var blends = conn.Table<Blend>().ToList();
-
-                BlendListView.ItemsSource = blends;
-            }
         }
 
-        private void BlendListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void OnBlendSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var selectedBlend = BlendListView.SelectedItem as Blend;
-            if (selectedBlend != null)
-            {
-                Navigation.PushAsync(new BlendDetailPage(selectedBlend));
-            }
+            ViewModel.SelectBlendCommand.Execute(e.SelectedItem);
         }
 
-        
-        
+        public BlendListPageViewModel ViewModel
+        {
+            get { return BindingContext as BlendListPageViewModel; }
+            set { BindingContext = value; }
+        }
+
     }
 }

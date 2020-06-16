@@ -75,6 +75,7 @@ namespace Oleo.ViewModels
                 {
                     _selectedIngredient1 = value;
                     MyIngredient1 = _selectedIngredient1.Value;
+                    
                 }
             }
             

@@ -4,12 +4,12 @@
              x:Class="Oleo.Controls.FlyoutHeader"
              HeightRequest="200">
     <Grid BackgroundColor="{StaticResource SecondaryColor}">
-        <!--<Image Aspect="AspectFill" 
-               Source="header.jpg" 
-               Opacity="0.8" />-->
+        <Image Aspect="AspectFill" 
+               Source="header.PNG" 
+               Opacity="0.8" />
         <Label Text="OleoApp" 
                FontSize="Large"
-               TextColor="Black" 
+               TextColor="White" 
                FontAttributes="Bold"
                
                HorizontalTextAlignment="Center"

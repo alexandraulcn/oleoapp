@@ -1,17 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using Oleo.Models;
 
 
 namespace Oleo.ViewModels
 {
-    class ExampleListViewModel
+    class ExampleListViewModel : BaseViewModel
     {
-        public List<Example> Examples { get; set; }
+        public ObservableCollection<Example> _examples;
+        public ObservableCollection<Example> Examples
+        {
+            get { return _examples; }
+            set
+            {
+
+                _examples = value;
+            }
+        }
         public ExampleListViewModel()
         {
-            Examples = new List<Example>();
+            Examples = new ObservableCollection<Example>();
             Examples.Add(new Example
             {
                 Nume = "RESPIRĂ UȘOR",

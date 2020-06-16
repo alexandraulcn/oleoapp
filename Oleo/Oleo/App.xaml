@@ -7,14 +7,14 @@
              x:Class="Oleo.App"
              >
     <Application.Resources>
-        <Color x:Key="PrimaryColor">#cfd8dc</Color>
-        <Color x:Key="SecondaryColor">#62a1ff</Color>
-        <Color x:Key="PrimaryDarkColor">#90a4ae</Color>
-        <Color x:Key="SecondaryLightColor">#9ad2ff</Color>
-        <Color x:Key="SecondaryDarkColor">#1973cb</Color>
-        <Color x:Key="Accent">#b388ff</Color>
+        <Color x:Key="PrimaryColor">#f5f5f5</Color>
+        <Color x:Key="SecondaryColor">#1DE9B6</Color>
+        <Color x:Key="PrimaryDarkColor">#919191</Color>
+        <Color x:Key="SecondaryLightColor">#64FFDA</Color>
+        <Color x:Key="SecondaryDarkColor">#00695C</Color>
+        <Color x:Key="AccentColor">#F50057</Color>
         
         <Color x:Key="TextColor">#000000</Color>
-        <Color x:Key="SecondaryTextColor">#455a64</Color>
+        <Color x:Key="SecondaryTextColor">#3d3d3d</Color>
     </Application.Resources>
 </Application>

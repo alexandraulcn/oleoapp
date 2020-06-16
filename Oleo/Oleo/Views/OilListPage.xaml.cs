@@ -23,8 +23,8 @@ namespace Oleo.Views
 
         private async void OnItemSelected(object sender, ItemTappedEventArgs e)
         {
-            var mydetails = e.Item as Oil;
-            await Navigation.PushAsync(new OilDetailPage(mydetails.Nume, mydetails.Descriere, mydetails.Proprietati,mydetails.Indicatii, mydetails.Aplicare, mydetails.Atentie));
+            var viewModel = e.Item as Oil;
+            await Navigation.PushAsync(new OilDetailPage(viewModel.Nume, viewModel.Descriere, viewModel.Proprietati, viewModel.Indicatii, viewModel.Aplicare, viewModel.Atentie));
         }
 
 

@@ -79,7 +79,7 @@
                         <Label Text="Atenționări:"
                                FontSize="Medium"
                                FontFamily="Bold"
-                               TextColor="{StaticResource SecondaryColor}"/>
+                               TextColor="{StaticResource AccentColor}"/>
                         <Label x:Name="AtentieOil" 
                                FontSize="Medium"
                                TextColor="{StaticResource SecondaryTextColor}"/>

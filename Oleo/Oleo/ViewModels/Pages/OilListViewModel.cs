@@ -7,13 +7,22 @@ using Oleo.Models;
 
 namespace Oleo.ViewModels
 {
-    class OilListViewModel
+    class OilListViewModel : BaseViewModel
     {
-        public List<Oil> Oils { get; set; }
+        public ObservableCollection<Oil> _oils;
+        public ObservableCollection<Oil> Oils
+        {
+            get { return _oils; }
+            set
+            {
+
+                _oils = value;
+            }
+        }
         public OilListViewModel()
         {
 
-            Oils = new List<Oil>();
+            Oils = new ObservableCollection<Oil>();
             /*Oils.Add(new Oil
             {
                 Nume = "",
@@ -23,6 +32,7 @@ namespace Oleo.ViewModels
                 Aplicare = "",
                 Atentie = ""
             })*/
+
             Oils.Add(new Oil
             {
                 Nume = "Arbore de ceai"

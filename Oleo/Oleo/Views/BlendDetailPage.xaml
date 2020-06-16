@@ -5,112 +5,112 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Oleo.Views.BlendDetailPage"
+             x:Name="blendDetailPage"
              Visual="Material"
              BackgroundColor= "#fafafa">
     <ContentPage.Content>
-        
-            <StackLayout Padding="30"
+
+        <StackLayout Padding="30"
                          Spacing="20">
 
-                <Label x:Name="NumeBlend" 
+            <Label Text="{Binding Path=Blend.Nume}" 
                         HorizontalTextAlignment="Center"
-                       
                         FontFamily="Bold"
                         TextColor="{StaticResource SecondaryDarkColor}"
                         FontSize="Title"
                         Padding="10"/>
 
-                <Frame Padding="15"
+            <Frame Padding="15"
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
-                    <FlexLayout Direction="Row"
+                <FlexLayout Direction="Row"
                                 Wrap="Wrap"
                                 JustifyContent="SpaceBetween"
-                                 AlignItems="Start"
-                               
+                                AlignItems="Start"
                                 Margin="10">
-                        <Label x:Name="Cant1Blend"
+                    <Label Text="{Binding Path=Blend.Cant1}"
                                TextColor="{StaticResource TextColor}"
                                FontSize="Medium"
                                FontFamily="Bold"
                                FontAttributes="Bold"
                                FlexLayout.Basis="20%"/>
-                        
-                        <Label Text="picături   "
+
+                    <Label Text="picături   "
                                FontSize="Medium"
                                FontAttributes="Bold"
                                FontFamily="Bold"
                                TextColor="{StaticResource TextColor}"
                                FlexLayout.Basis="30%"/>
-                        
-                        <Label x:Name="Ulei1Blend"
+
+                    <Label Text="{Binding Path=Blend.Ulei1}"
                                FlexLayout.Basis="50%"
                                FontSize="Medium"
                                FontFamily="Bold"
                                TextColor="{StaticResource SecondaryDarkColor}"
                                FontAttributes="Bold"/>
 
-                        <Label x:Name="Cant2Blend"
+                    <Label Text="{Binding Path=Blend.Cant2}"
                                FontSize="Medium"
                                FontAttributes="Bold"
                                FontFamily="Bold"
                                TextColor="{StaticResource TextColor}"
                                FlexLayout.Basis="20%"/>
-                        
-                        <Label Text="picături   "
+
+                    <Label Text="picături   "
                                FontSize="Medium"
                                FontAttributes="Bold"
                                FontFamily="Bold"
                                TextColor="{StaticResource TextColor}"
                                FlexLayout.Basis="30%"/>
-                        
-                        <Label x:Name="Ulei2Blend" 
+
+                    <Label Text="{Binding Path=Blend.Ulei2}"
                                FlexLayout.Basis="50%"
                                FontSize="Medium"
                                FontFamily="Bold"
                                TextColor="{StaticResource SecondaryDarkColor}"
                                FontAttributes="Bold"/>
 
-                        <Label x:Name="Cant3Blend"
+                    <Label Text="{Binding Path=Blend.Cant3}"
                                TextColor="{StaticResource TextColor}"
                                FontSize="Medium"
                                FontFamily="Bold"
                                FontAttributes="Bold"
                                FlexLayout.Basis="20%"/>
-                        
-                        <Label Text="picături   "
+
+                    <Label Text="picături   "
                                FontSize="Medium"
                                FontFamily="Bold"
                                FontAttributes="Bold"
                                TextColor="{StaticResource TextColor}"
                                FlexLayout.Basis="30%"/>
-                        
-                        <Label x:Name="Ulei3Blend"
 
+                    <Label Text="{Binding Path=Blend.Ulei3}"
                                TextColor="{StaticResource SecondaryDarkColor}"
                                FontSize="Medium"
                                FontAttributes="Bold"
                                FontFamily="Bold"
                                FlexLayout.Basis="50%"/>
 
-                        <Label Text="Descriere:" 
+                    <Label Text="Descriere:" 
                                FontSize="Large"
                                Margin="0,10,10,0"
                                TextColor="{StaticResource SecondaryTextColor}"
                                FlexLayout.Basis="100%"/>
-                        
-                        <Label x:Name="DescriereBlend"
+
+                    <Label Text="{Binding Path=Blend.Descriere}"
                                FontSize="Medium"
                                TextColor="{StaticResource TextColor}"
                                FlexLayout.Basis="100%"/>
-                    </FlexLayout>
-                </Frame>
-                
-                <Button Text="Sterge blend"
-                        Clicked="DeleteButton_Clicked"
-                        HorizontalOptions="Center"/>
-
-            </StackLayout>
-        
+                    
+                    
+                </FlexLayout>
+            </Frame>
+            <!--<Button Text="Sterge blend"
+                    Command="{Binding Source={x:Reference blendDetailPage}, Path=ViewModel.DeleteBlendCommand}" 
+                    CommandParameter="{Binding .}"/>
+            <Button Text="Modifica blend"
+                      Command="{Binding Source={x:Reference blendDetailPage}, Path=ViewModel.UpdateBlendCommand}" 
+                    CommandParameter="{Binding .}"/>-->
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

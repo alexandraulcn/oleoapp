@@ -33,28 +33,28 @@
                         <Label Text="Nu administrati intern uleiuri copiilor."
                                FontAttributes="Bold"
                                FontSize="Medium"
-                               TextColor="{StaticResource SecondaryDarkColor}"
+                               TextColor="{StaticResource AccentColor}"
                                FlexLayout.Basis="90%"/>
                         <Image Source="dont.png"
                                FlexLayout.Basis="7%"/>
                         <Label Text="Nu puneți uleiuri în canalul urechii, în ochi, în jurul feței sau al gurii."
                                FontAttributes="Bold"
                                FontSize="Medium"
-                               TextColor="{StaticResource SecondaryDarkColor}"
+                               TextColor="{StaticResource AccentColor}"
                                FlexLayout.Basis="90%"/>
                         <Image Source="dont.png"
                                FlexLayout.Basis="7%"/>
                         <Label Text="Nu aplicați uleiuri nediluate."
                                FontAttributes="Bold"
                                FontSize="Medium"
-                               TextColor="{StaticResource SecondaryDarkColor}"
+                               TextColor="{StaticResource AccentColor}"
                                FlexLayout.Basis="90%"/>
                         <Image Source="dont.png"
                                FlexLayout.Basis="7%"/>
                         <Label Text="Nu aplicați pe bebeluși mai mici de 6 luni."
                                FontAttributes="Bold"
                                FontSize="Medium"
-                               TextColor="{StaticResource SecondaryDarkColor}"
+                               TextColor="{StaticResource AccentColor}"
                                FlexLayout.Basis="90%"/>
                     </FlexLayout>
                 </Frame>

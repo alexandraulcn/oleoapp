@@ -14,16 +14,14 @@ namespace Oleo
 {
     public partial class App : Application
     {
-        public static string FilePath;
-        public App(string filePath)
+       
+        public App()
         {
             InitializeComponent();
 
             MainPage = new AppShell();
 
-            FilePath = filePath;
-            
-
+           
         }
 
         protected override void OnStart()

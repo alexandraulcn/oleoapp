@@ -5,12 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:custom="clr-namespace:Oleo"
              mc:Ignorable="d"
+             x:Name="blendsPage"
              x:Class="Oleo.Views.BlendListPage"
              Visual="Material">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Adauga blend"
                      IconImageSource="add.png"
-                     Clicked="NewBlendToolbarItem_Clicked"
+                     Command="{Binding AddBlendCommand}"
                      Order="Primary"
                      Priority="0"/>
     </ContentPage.ToolbarItems>
@@ -21,7 +22,10 @@
                       Margin="20"
                       SeparatorColor="{StaticResource SecondaryDarkColor}"
                       SeparatorVisibility="Default"
-                      ItemSelected="BlendListView_ItemSelected">
+                      ItemsSource="{Binding Blends}"
+                      SelectedItem="{Binding SelectedBlend, Mode=TwoWay}"
+                      IsPullToRefreshEnabled="True"
+                      ItemSelected="OnBlendSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                             <custom:CustomViewCell SelectedItemBackgroundColor="White">
@@ -30,8 +34,21 @@
                                            FontSize="Medium"
                                            VerticalOptions="CenterAndExpand"
                                            VerticalTextAlignment="Start"
-                                           TextColor="{StaticResource SecondaryTextColor}"/>    
+                                          
+                                           TextColor="{StaticResource SecondaryTextColor}"/>
                                 </ViewCell.View>
+                                
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Șterge" IsDestructive="true" 
+                                              IconImageSource="delete.png"
+                                              Command="{Binding Source={x:Reference blendsPage}, Path=ViewModel.DeleteBlendCommand}" 
+                                              CommandParameter="{Binding .}"/>
+                                    <MenuItem Text="Modifică" IsDestructive="true" 
+                                              IconImageSource="update.png"
+                                              Command="{Binding Source={x:Reference blendsPage}, Path=ViewModel.UpdateBlendCommand}" 
+                                              CommandParameter="{Binding .}"/>
+                                </ViewCell.ContextActions>
+
                             </custom:CustomViewCell>
                         </DataTemplate>
             </ListView.ItemTemplate>

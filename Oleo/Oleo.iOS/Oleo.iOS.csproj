@@ -68,6 +68,7 @@
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
+    <Compile Include="Persistence\SQLiteDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -180,9 +181,6 @@
     <BundleResource Include="Resources\done.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\header.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\dont.png" />
   </ItemGroup>
   <ItemGroup>
@@ -190,5 +188,11 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\chart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\header.PNG" />
   </ItemGroup>
 </Project>

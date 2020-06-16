@@ -16,16 +16,16 @@
         <Style x:Key="BaseStyle"
                TargetType="Element">
             <Setter Property="Shell.BackgroundColor"
-                    Value="#62a1ff" /> 
+                    Value="#4CB5AB" />
             <Setter Property="Shell.TitleColor" 
-                    Value="White" />
+                    Value="Black" />
             <Setter Property="Shell.ForegroundColor"
                     Value="#000000" />
             <Setter Property="Shell.DisabledColor" 
-                    Value="#5994ea" /> 
+                    Value="White" />
             <Setter Property="Shell.UnselectedColor" 
-                    Value="#003160" />
-           
+                    Value="White"/>
+
         </Style>
         <Style TargetType="ShellItem"
                BasedOn="{StaticResource BaseStyle}" />
@@ -74,7 +74,7 @@
 
         <ShellContent Route="oils"
                       Icon="oil.png"
-                      Title="Uleiuri esențiale"
+                      Title="Uleiuri"
                       ContentTemplate="{DataTemplate views:OilListPage}"
                       Style="{StaticResource OleoShell}"
                       />
