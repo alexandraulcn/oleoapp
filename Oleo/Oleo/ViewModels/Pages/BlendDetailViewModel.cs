@@ -77,7 +77,7 @@ namespace Oleo.ViewModels
 
         private async Task DeleteBlend(BlendViewModel blendViewModel)
         {
-            if (await _pageService.DisplayAlert("Avertizare", $"Sunteti sigur ca doriti sa stergeti blendul {blendViewModel.Nume}?", "Da", "Nu"))
+            if (await _pageService.DisplayAlert("Avertizare", $"Sunteți sigur că doriți sa ștergeți blendul {blendViewModel.Nume}?", "Da", "Nu"))
             {
                 Blends.Remove(blendViewModel);
 

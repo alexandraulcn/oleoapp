@@ -3,48 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace: Oleo.Controls"
+             xmlns:controls="clr-namespace:Oleo.Controls"
              xmlns:custom="clr-namespace:Oleo"
+             xmlns:data="clr-namespace:Oleo.Data"
              mc:Ignorable="d"
              x:Class="Oleo.Views.AfectiuneListPage"
-             Visual="Material"
-             Shell.NavBarIsVisible="False">
+             Visual="Material">
+
+    <Shell.SearchHandler>
+        <controls:AfectiuneSearchHandler Placeholder="Caută..."
+                                         ShowsResults="true"
+                                         ItemTemplate="{StaticResource AfectiuneSearchTemplate}"
+                                         Afectiuni="{x:Static data:AfectiuneData.Afectiuni}"
+                                       />
+    </Shell.SearchHandler>
 
     <ContentPage.Content>
-        
         <ScrollView>
-            <StackLayout Spacing="20"
-                        >
-                <SearchBar Placeholder="Descoperă..."  
-                           TextChanged="SearchBar_TextChanged"
-                           
-                           PlaceholderColor="{StaticResource SecondaryDarkColor}"
-                           CancelButtonColor="{StaticResource SecondaryDarkColor}"
-                           Margin="10,10,0,10"/>
-
-                <ListView ItemsSource="{Binding Afectiuni}"
-                          x:Name="AfectiuniListView"
+            <StackLayout>
+                
+                
+                <ListView x:Name="AfectiuneListView"
+                          ItemsSource="{x:Static data:AfectiuneData.Afectiuni}"
                           SeparatorVisibility="Default"
                           SeparatorColor="{StaticResource SecondaryDarkColor}"
-                          Margin="20,0,20,20"
                           ItemTapped="OnItemSelected"
-                          IsPullToRefreshEnabled="True">
-                    <ListView.ItemTemplate>
-                <DataTemplate>
-                            <custom:CustomViewCell SelectedItemBackgroundColor="White">
-                                <ViewCell.View>
-                                    <Grid>
-                                        <Label Text="{Binding Denumire}"
+                          IsPullToRefreshEnabled="True"
+                          Margin="20,0,20,20">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <custom:CustomViewCell SelectedItemBackgroundColor="White">
+                            <ViewCell.View>
+                                <Grid>
+                                    <Label Text="{Binding Denumire}"
                                                FontSize="Medium"
                                                VerticalOptions="CenterAndExpand"
-                                               TextColor="{StaticResource SecondaryTextColor}"
-                                       />
-                                    </Grid>
-                                </ViewCell.View>
-                            </custom:CustomViewCell>
-                        </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                                               TextColor="{StaticResource SecondaryTextColor}"/>
+                                </Grid>
+                            </ViewCell.View>
+                        </custom:CustomViewCell>
+                    </DataTemplate>
+                    </ListView.ItemTemplate>
+                 </ListView>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

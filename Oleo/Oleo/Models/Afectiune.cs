@@ -12,5 +12,6 @@ namespace Oleo.Models
         public string Recomandari { get; set; }
         public string Aplicare { get; set; }
 
+        
     }
 }

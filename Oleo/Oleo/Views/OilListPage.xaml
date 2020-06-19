@@ -4,26 +4,29 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:custom="clr-namespace:Oleo"
+             xmlns:controls="clr-namespace:Oleo.Controls"
+             xmlns:data="clr-namespace:Oleo.Data"
              mc:Ignorable="d"
              x:Class="Oleo.Views.OilListPage"
-             Visual="Material"
-             Shell.NavBarIsVisible="False">
+             Visual="Material">
+    <Shell.SearchHandler>
+        <controls:OilSearchHandler Placeholder="Caută..."
+                                   ShowsResults="true"
+                                   ItemTemplate="{StaticResource OilSearchTemplate}"
+                                   Oils="{x:Static data:OilData.Oils}"
+                                       />
+    </Shell.SearchHandler>
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="20">
-                <SearchBar Placeholder="Descoperă..."  
-                           PlaceholderColor="{StaticResource SecondaryDarkColor}"
-                           TextChanged="SearchBar_TextChanged"
-                           CancelButtonColor="{StaticResource SecondaryDarkColor}"
-                           Margin="10,10,0,10"/>
-                
-                <ListView ItemsSource="{Binding Oils}"
+            <StackLayout>
+
+                <ListView ItemsSource="{x:Static data:OilData.Oils}"
                           x:Name="OilListView"
                           Margin="20,0,20,20"
                           SeparatorVisibility="Default"
                           SeparatorColor="{StaticResource SecondaryDarkColor}"
-                          ItemTapped="OnItemSelected"
-                          IsPullToRefreshEnabled="True">
+                          IsPullToRefreshEnabled="True"
+                          ItemTapped="OnItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <custom:CustomViewCell SelectedItemBackgroundColor="White">

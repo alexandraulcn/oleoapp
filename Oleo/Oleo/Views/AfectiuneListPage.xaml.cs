@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Oleo.ViewModels;
 using Oleo.Models;
+using Oleo.Data;
 
 namespace Oleo.Views
 {
@@ -22,24 +23,11 @@ namespace Oleo.Views
 
         private async void OnItemSelected(object sender, ItemTappedEventArgs e)
         {
-            var mydetails = e.Item as Afectiune;
-            await Navigation.PushAsync(new AfectiuneDetailPage(mydetails.Denumire, mydetails.Descriere,mydetails.Recomandari,mydetails.Aplicare));
-        }
+            string afectiuneDenumire = (e.Item as Afectiune).Denumire;
 
-        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            var _container = BindingContext as AfectiuneListViewModel;
-            AfectiuniListView.BeginRefresh();
-
-            if (string.IsNullOrWhiteSpace(e.NewTextValue))
-                AfectiuniListView.ItemsSource = _container.Afectiuni;
-            else
-                AfectiuniListView.ItemsSource = _container.Afectiuni.Where(i => i.Denumire.ToLower().StartsWith(e.NewTextValue.ToLower()));
-            AfectiuniListView.EndRefresh();
-
+            await Shell.Current.GoToAsync($"afectiunedetails?denumire={afectiuneDenumire}");
 
         }
 
-        
     }
 }

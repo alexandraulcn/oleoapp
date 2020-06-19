@@ -6,8 +6,7 @@ using Xamarin.Forms;
 
 namespace Oleo.Services
 {
-    public interface 
-        IPageService
+    public interface IPageService
     {
         Task PushAsync(Page page);
         Task<Page> PopAsync();

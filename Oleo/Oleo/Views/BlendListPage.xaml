@@ -18,15 +18,10 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Spacing="20">
-                <ListView x:Name="BlendListView"
-                      Margin="20"
-                      SeparatorColor="{StaticResource SecondaryDarkColor}"
-                      SeparatorVisibility="Default"
-                      ItemsSource="{Binding Blends}"
-                      SelectedItem="{Binding SelectedBlend, Mode=TwoWay}"
-                      IsPullToRefreshEnabled="True"
-                      ItemSelected="OnBlendSelected">
-                <ListView.ItemTemplate>
+                <ListView x:Name="BlendListView" IsPullToRefreshEnabled="True" Margin="20" SeparatorColor="{StaticResource SecondaryDarkColor}"  SeparatorVisibility="Default"
+                          ItemsSource="{Binding Blends}"
+                          SelectedItem="{Binding SelectedBlend, Mode=TwoWay}" ItemSelected="OnBlendSelected">
+                    <ListView.ItemTemplate>
                     <DataTemplate>
                             <custom:CustomViewCell SelectedItemBackgroundColor="White">
                                 <ViewCell.View>

@@ -1,38 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="Oleo.Views.BlendDetailPage"
-             x:Name="blendDetailPage"
-             Visual="Material"
-             BackgroundColor= "#fafafa">
-    <ContentPage.Content>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:custom="clr-namespace:Oleo"
+                 mc:Ignorable="d"
+                 x:Name="blendDetailPopUp"
+                 x:Class="Oleo.Views.BlendDetailPopUp"
+                Visual="Material">
 
-        <StackLayout Padding="30"
-                         Spacing="20">
-
-            <Label Text="{Binding Path=Blend.Nume}" 
-                        HorizontalTextAlignment="Center"
-                        FontFamily="Bold"
-                        TextColor="{StaticResource SecondaryDarkColor}"
-                        FontSize="Title"
-                        Padding="10"/>
-
-            <Frame Padding="15"
-                       HasShadow="True"
-                       BorderColor="{StaticResource PrimaryDarkColor}">
-                <FlexLayout Direction="Row"
-                                Wrap="Wrap"
-                                JustifyContent="SpaceBetween"
-                                AlignItems="Start"
-                                Margin="10">
+    <StackLayout  VerticalOptions="Center" HorizontalOptions="Center">
+        <Frame  BackgroundColor="White"
+                     HasShadow="True"
+                     BorderColor="{StaticResource PrimaryDarkColor}"
+                     HeightRequest="350" 
+                     WidthRequest="300" >
+                    
+                <FlexLayout  Direction="Row"
+                             Wrap="Wrap"
+                             JustifyContent="SpaceBetween"
+                             AlignItems="Start"
+                             Margin="5">
+                    <Label Text="{Binding Path=Blend.Nume}" 
+                           HorizontalTextAlignment="Center"
+                           FontFamily="Bold"
+                           TextColor="{StaticResource SecondaryDarkColor}"
+                           FontSize="Title"
+                           FlexLayout.Basis="100%"
+                           Padding="10"/>
+                    
                     <Label Text="{Binding Path=Blend.Cant1}"
                                TextColor="{StaticResource TextColor}"
                                FontSize="Medium"
                                FontFamily="Bold"
                                FontAttributes="Bold"
+                               HorizontalOptions="End"
                                FlexLayout.Basis="20%"/>
 
                     <Label Text="picături   "
@@ -101,16 +104,10 @@
                                FontSize="Medium"
                                TextColor="{StaticResource TextColor}"
                                FlexLayout.Basis="100%"/>
-                    
-                    
+
+
                 </FlexLayout>
-            </Frame>
-            <!--<Button Text="Sterge blend"
-                    Command="{Binding Source={x:Reference blendDetailPage}, Path=ViewModel.DeleteBlendCommand}" 
-                    CommandParameter="{Binding .}"/>
-            <Button Text="Modifica blend"
-                      Command="{Binding Source={x:Reference blendDetailPage}, Path=ViewModel.UpdateBlendCommand}" 
-                    CommandParameter="{Binding .}"/>-->
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+           
+        </Frame>
+    </StackLayout>
+</pages:PopupPage>

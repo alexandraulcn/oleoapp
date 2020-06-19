@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 
 using Foundation;
-using Oleo.iOS.Persistence;
-using Oleo.Persistence;
+using Oleo.iOS.Data;
+using Oleo.Data;
 using SQLite;
 using UIKit;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(SQLiteDb))]
-namespace Oleo.iOS.Persistence
+namespace Oleo.iOS.Data
 {
     class SQLiteDb : ISQLiteDb
     {

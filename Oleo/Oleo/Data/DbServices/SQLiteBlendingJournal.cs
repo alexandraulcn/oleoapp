@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oleo.Persistence
+namespace Oleo.Data
 {
     class SQLiteBlendingJournal : IBlendingJournal
     {

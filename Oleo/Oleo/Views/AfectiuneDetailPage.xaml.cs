@@ -7,22 +7,26 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Oleo.Models;
-
+using Oleo.Data;
 
 namespace Oleo.Views
 {
+    [QueryProperty("Denumire", "denumire")]
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AfectiuneDetailPage : ContentPage
     {
-        public AfectiuneDetailPage(string Denumire, string Descriere, string Recomandari, string Aplicare)
+        public string Denumire 
+        {
+            set
+            {
+                BindingContext = AfectiuneData.Afectiuni.FirstOrDefault(a => a.Denumire == Uri.UnescapeDataString(value));
+            }
+        }
+        public AfectiuneDetailPage()
         {
             InitializeComponent();
+           
 
-            DenumireAfectiune.Text = Denumire;
-            DescriereAfectiune.Text = Descriere;
-            RecomandariAfectiune.Text = Recomandari;
-            AplicareAfectiune.Text = Aplicare;
-            
         }
     }
 }

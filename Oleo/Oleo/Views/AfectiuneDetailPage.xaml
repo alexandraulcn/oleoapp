@@ -11,7 +11,7 @@
         <ScrollView>
             <StackLayout Padding="15"
                          Spacing="20">
-                <Label x:Name="DenumireAfectiune" 
+                <Label Text="{Binding Denumire}" 
                        HorizontalTextAlignment="Center"
                        TextColor="{StaticResource SecondaryDarkColor}"
                        FontSize="Title"
@@ -21,7 +21,7 @@
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
                     <StackLayout>
-                        <Label x:Name="DescriereAfectiune"  
+                        <Label Text="{Binding Descriere}" 
                                FontSize="Medium"
                                HorizontalTextAlignment="Center"
                                FontFamily="LightItalic"
@@ -38,7 +38,7 @@
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>
 
-                        <Label x:Name="RecomandariAfectiune" 
+                        <Label Text="{Binding Recomandari}" 
                                FontSize="Medium"
                                TextColor="{StaticResource SecondaryTextColor}"/>
                     </StackLayout>
@@ -52,7 +52,7 @@
                                FontSize="Medium"
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>
-                        <Label x:Name="AplicareAfectiune" 
+                        <Label Text="{Binding Aplicare}" 
                                FontSize="Medium"
                                TextColor="{StaticResource SecondaryTextColor}"/>
                     </StackLayout>

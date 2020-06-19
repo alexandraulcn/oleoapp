@@ -42,8 +42,14 @@ namespace Oleo.ViewModels
 
         public async Task Save()
         {
-            if (String.IsNullOrWhiteSpace(Blend.Nume) || String.IsNullOrWhiteSpace(Blend.Ulei1) || String.IsNullOrWhiteSpace(Blend.Cant1) || String.IsNullOrWhiteSpace(Blend.Cant2)
-            ||String.IsNullOrWhiteSpace(Blend.Cant3) || String.IsNullOrWhiteSpace(Blend.Ulei2) || String.IsNullOrWhiteSpace(Blend.Ulei3) || String.IsNullOrWhiteSpace(Blend.Descriere))
+            if (   String.IsNullOrWhiteSpace(Blend.Nume)
+                || String.IsNullOrWhiteSpace(Blend.Ulei1)
+                || String.IsNullOrWhiteSpace(Blend.Cant1)
+                || String.IsNullOrWhiteSpace(Blend.Cant2)
+                || String.IsNullOrWhiteSpace(Blend.Cant3)
+                || String.IsNullOrWhiteSpace(Blend.Ulei2)
+                || String.IsNullOrWhiteSpace(Blend.Ulei3)
+                || String.IsNullOrWhiteSpace(Blend.Descriere))
             {
                 await _pageService.DisplayAlert("Câmpuri goale", "Vă rugăm completați toate câmpurile.", "OK");
                 return;

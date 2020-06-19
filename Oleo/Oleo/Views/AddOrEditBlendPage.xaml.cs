@@ -1,7 +1,8 @@
 ﻿using Oleo.Models;
-using Oleo.Persistence;
+using Oleo.Data;
 using Oleo.Services;
 using Oleo.ViewModels;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,14 +22,18 @@ namespace Oleo.Views
             
 
             InitializeComponent();
+            
             var blendingJournal = new SQLiteBlendingJournal(DependencyService.Get<ISQLiteDb>());
             var pageService = new PageService();
             Title = (viewModel.Nume == null) ? "Blend nou" : "Modifică blend";
             BindingContext = new AddOrEditBlendViewModel(viewModel ?? new BlendViewModel(), blendingJournal, pageService);
-            BindingContext = new OilPickerViewModel();
-
-
             
         }
+
+        private void ShowPopup(object o, EventArgs e)
+        {
+            PopupNavigation.Instance.PushAsync(new IngredientePopUp());
+        }
+
     }
 }

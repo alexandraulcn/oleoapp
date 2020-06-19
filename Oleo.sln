@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oleo.Android", "Oleo\Oleo.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oleo.iOS", "Oleo\Oleo.iOS\Oleo.iOS.csproj", "{E3411B78-BD5E-486E-B479-A94D4F12B893}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oleo", "Oleo\Oleo\Oleo.csproj", "{7B33A6FC-1B6B-4BDC-B4F9-834E69C35A02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oleo", "Oleo\Oleo\Oleo.csproj", "{7B33A6FC-1B6B-4BDC-B4F9-834E69C35A02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{538B95A9-6ACF-43E3-B34C-730FF9A20D96}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

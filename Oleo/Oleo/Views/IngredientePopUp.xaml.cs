@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Oleo.ViewModels;
+using Rg.Plugins.Popup.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,19 +8,20 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Oleo.ViewModels;
-using Oleo.Models;
 
 namespace Oleo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ExampleListPage : ContentPage
+    public partial class IngredientePopUp 
     {
-        public ExampleListPage()
+        public IngredientePopUp()
         {
             InitializeComponent();
-            BindingContext = new ExampleListViewModel();
+
+            BindingContext = new OilPickerViewModel();
+            
+           
         }
-        
+
     }
 }

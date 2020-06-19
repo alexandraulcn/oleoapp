@@ -6,14 +6,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Oleo.Models;
-using Oleo.Persistence;
+using Oleo.Data;
 using Oleo.Services;
 using Oleo.Views;
 using Xamarin.Forms;
+using Rg.Plugins.Popup.Services;
 
 namespace Oleo.ViewModels
 {
-    public class BlendListPageViewModel : BaseViewModel
+    public class BlendListViewModel : BaseViewModel
     {
         private BlendViewModel _selectedBlend;
         private IBlendingJournal _blendingJournal;
@@ -36,7 +37,7 @@ namespace Oleo.ViewModels
         public ICommand UpdateBlendCommand { get; private set; }
         public ICommand DeleteBlendCommand { get; private set; }
 
-        public BlendListPageViewModel(IBlendingJournal blendingJournal, PageService pageService)
+        public BlendListViewModel(IBlendingJournal blendingJournal, PageService pageService)
         {
             _blendingJournal = blendingJournal;
             _pageService = pageService;
@@ -95,7 +96,8 @@ namespace Oleo.ViewModels
                 return;
 
             SelectedBlend = null;
-            await _pageService.PushAsync(new BlendDetailPage(blend));
+            await PopupNavigation.Instance.PushAsync(new BlendDetailPopUp(blend));
+            
         }
 
         private async Task UpdateBlend(BlendViewModel blend)
@@ -105,7 +107,7 @@ namespace Oleo.ViewModels
 
         private async Task DeleteBlend(BlendViewModel blendViewModel)
         {
-            if (await _pageService.DisplayAlert("Avertizare", $"Sunteti sigur ca doriti sa stergeti blendul {blendViewModel.Nume}?", "Da", "Nu"))
+            if (await _pageService.DisplayAlert("Avertizare", $"Sunteți sigur că doriți să ștergeți blendul {blendViewModel.Nume}?", "Da", "Nu"))
             {
                 Blends.Remove(blendViewModel);
 

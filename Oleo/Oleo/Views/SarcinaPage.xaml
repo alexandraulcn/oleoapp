@@ -170,7 +170,7 @@
                         Wrap="Wrap"
                         JustifyContent="SpaceBetween"
                         AlignItems="Start">
-                        <Label Text="Iată uleiurile pe care ar trebui să le excludeți până când sosește copilul:"
+                        <Label Text="Lista uleiurilor pe care ar trebuie să le excludeți până când sosește copilul:"
                                HorizontalTextAlignment="Center"
                                FontSize="Large"
                                TextColor="{StaticResource SecondaryTextColor}"

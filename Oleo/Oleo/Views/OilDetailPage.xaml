@@ -11,8 +11,8 @@
         <ScrollView>
             <StackLayout Padding="15"
                          Spacing="20">
-            
-            <Label x:Name="NumeOil" 
+
+                <Label Text="{Binding Nume}"
                    HorizontalTextAlignment="Center"
                    TextColor="{StaticResource SecondaryDarkColor}"
                    FontSize="Title"
@@ -22,7 +22,7 @@
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
                     <StackLayout>
-                        <Label x:Name="DescriereOil"  
+                        <Label Text="{Binding Descriere}"
                                FontSize="Medium"
                                HorizontalTextAlignment="Center"
                                TextColor="{StaticResource TextColor}"
@@ -38,7 +38,7 @@
                                FontSize="Medium"
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>
-                        <Label x:Name="ProprietatiOil" 
+                        <Label Text="{Binding Proprietati}" 
                                FontSize="Medium"
                                TextColor="{StaticResource SecondaryTextColor}"/>
                     </StackLayout>
@@ -52,7 +52,7 @@
                                FontSize="Medium"
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>
-                        <Label x:Name="IndicatiiOil" 
+                        <Label Text="{Binding Indicatii}"
                                FontSize="Medium"
                                TextColor="{StaticResource SecondaryTextColor}"/>
                     </StackLayout>
@@ -66,7 +66,7 @@
                                FontSize="Medium"
                                FontFamily="Regular"
                                TextColor="{StaticResource TextColor}"/>
-                        <Label x:Name="AplicareOil" 
+                        <Label Text="{Binding Aplicare}" 
                                FontSize="Medium"
                                TextColor="{StaticResource SecondaryTextColor}"/>
                     </StackLayout>
@@ -80,7 +80,7 @@
                                FontSize="Medium"
                                FontFamily="Bold"
                                TextColor="{StaticResource AccentColor}"/>
-                        <Label x:Name="AtentieOil" 
+                        <Label Text="{Binding Atentie}"
                                FontSize="Medium"
                                TextColor="{StaticResource SecondaryTextColor}"/>
                     </StackLayout>

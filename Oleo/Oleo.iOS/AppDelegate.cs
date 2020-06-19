@@ -27,6 +27,7 @@ namespace Oleo.iOS
             global::Xamarin.Forms.Forms.Init();
             global::Xamarin.Forms.FormsMaterial.Init();
 
+            Rg.Plugins.Popup.Popup.Init();
 
             LoadApplication(new App());
 

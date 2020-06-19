@@ -35,6 +35,8 @@
 
   <ItemGroup>
    
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.3" />
+   
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
    
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.772" />  
@@ -49,11 +51,17 @@
     <Compile Update="Views\AfectiuneDetailPage.xaml.cs">
       <DependentUpon>AfectiuneDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\BlendDetailPopUp.xaml.cs">
+      <DependentUpon>BlendDetailPopUp.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\BlendListPage.xaml.cs">
       <DependentUpon>BlendListPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\ExampleListPage.xaml.cs">
       <DependentUpon>ExampleListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\IngredientePopUp.xaml.cs">
+      <DependentUpon>IngredientePopUp.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -84,7 +92,7 @@
     <EmbeddedResource Update="Views\BeneficiiPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\BlendDetailPage.xaml">
+    <EmbeddedResource Update="Views\BlendDetailPopUp.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\BlendListPage.xaml">
@@ -106,6 +114,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\OilListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\IngredientePopUp.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SarcinaPage.xaml">

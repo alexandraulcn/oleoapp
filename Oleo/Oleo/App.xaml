@@ -16,5 +16,23 @@
         
         <Color x:Key="TextColor">#000000</Color>
         <Color x:Key="SecondaryTextColor">#3d3d3d</Color>
+
+        <DataTemplate x:Key="AfectiuneSearchTemplate">
+            <Grid Padding="10">
+               
+                <Label 
+                       Text="{Binding Denumire}" 
+                       FontAttributes="Bold" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="OilSearchTemplate">
+            <Grid Padding="10">
+
+                <Label 
+                       Text="{Binding Nume}" 
+                       FontAttributes="Bold" />
+            </Grid>
+        </DataTemplate>
     </Application.Resources>
 </Application>

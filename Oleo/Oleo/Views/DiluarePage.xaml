@@ -11,7 +11,7 @@
             <StackLayout Padding="30">
             <Label Text="Tabel de diluare"
                                FontSize="Large"
-                               FontFamily="Regular"
+                              
                                TextColor="{StaticResource TextColor}"
                                HorizontalTextAlignment="Center"
                                Padding="10"/>

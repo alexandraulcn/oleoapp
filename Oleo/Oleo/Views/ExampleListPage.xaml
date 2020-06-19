@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:custom="clr-namespace:Oleo"
+             xmlns:data="clr-namespace:Oleo.Data"
              mc:Ignorable="d"
              x:Class="Oleo.Views.ExampleListPage"
              Visual="Material"
@@ -21,13 +22,12 @@
                        HasShadow="True"
                        BorderColor="{StaticResource PrimaryDarkColor}">
                     <StackLayout>
-                       
-                    <ListView ItemsSource="{Binding Examples}"
-                          x:Name="ExamplesListView"
+
+                        <ListView ItemsSource="{x:Static data:ExampleData.Examples}"
                           SeparatorVisibility="Default"
                           SeparatorColor="{StaticResource SecondaryDarkColor}"
                           RowHeight="125"
-                          ItemSelected="ListView_ItemSelected"
+                          
                           >
                     <ListView.ItemTemplate>
                         <DataTemplate>

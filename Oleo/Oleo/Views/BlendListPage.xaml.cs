@@ -8,7 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SQLite;
 using Oleo.Models;
-using Oleo.Persistence;
+using Oleo.Data;
 using Oleo.Services;
 using Oleo.ViewModels;
 
@@ -23,7 +23,7 @@ namespace Oleo.Views
 
             var blendingJournal = new SQLiteBlendingJournal(DependencyService.Get<ISQLiteDb>());
             var pageService = new PageService();
-            ViewModel = new BlendListPageViewModel(blendingJournal, pageService);
+            ViewModel = new BlendListViewModel(blendingJournal, pageService);
         }
 
         protected override void OnAppearing()
@@ -37,9 +37,9 @@ namespace Oleo.Views
             ViewModel.SelectBlendCommand.Execute(e.SelectedItem);
         }
 
-        public BlendListPageViewModel ViewModel
+        public BlendListViewModel ViewModel
         {
-            get { return BindingContext as BlendListPageViewModel; }
+            get { return BindingContext as BlendListViewModel; }
             set { BindingContext = value; }
         }
 

@@ -8,7 +8,7 @@ using Oleo.Models;
 
 namespace Oleo.ViewModels
 {
-    public class OilPickerViewModel: INotifyPropertyChanged
+    public class OilPickerViewModel: BaseViewModel
     {
         public List<Ingredient> Ingredients { get; set; }
         public OilPickerViewModel()
@@ -60,95 +60,6 @@ namespace Oleo.ViewModels
 
             return ingredients;
         }
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
-        private Ingredient _selectedIngredient1 { get; set; }
-        public Ingredient SelectedIngredient1
-        {
-            get { return _selectedIngredient1; }
-            set
-            {
-                if(_selectedIngredient1 != value)
-                {
-                    _selectedIngredient1 = value;
-                    MyIngredient1 = _selectedIngredient1.Value;
-                    
-                }
-            }
-            
-        }
-
-        private Ingredient _selectedIngredient2 { get; set; }
-        public Ingredient SelectedIngredient2
-        {
-            get { return _selectedIngredient2; }
-            set
-            {
-                if (_selectedIngredient2 != value)
-                {
-                    _selectedIngredient2 = value;
-                    MyIngredient2 = _selectedIngredient2.Value;
-                }
-            }
-        }
-        private Ingredient _selectedIngredient3 { get; set; }
-        public Ingredient SelectedIngredient3
-        {
-            get { return _selectedIngredient3; }
-            set
-            {
-                if (_selectedIngredient3 != value)
-                {
-                    _selectedIngredient3 = value;
-                    MyIngredient3 = _selectedIngredient3.Value;
-                }
-            }
-        }
-        private string myIngredient1 { get; set; }
-        public string MyIngredient1
-        {
-            get { return myIngredient1; }
-            set
-            {
-                if( myIngredient1 != value)
-                {
-                    myIngredient1 = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        private string myIngredient2 { get; set; }
-
-        public string MyIngredient2
-        {
-            get { return myIngredient2; }
-            set
-            {
-                if (myIngredient2 != value)
-                {
-                    myIngredient2 = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        private string myIngredient3 { get; set; }
-
-        public string MyIngredient3
-        {
-            get { return myIngredient3; }
-            set
-            {
-                if (myIngredient3 != value)
-                {
-                    myIngredient3 = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
+        
     }
 }

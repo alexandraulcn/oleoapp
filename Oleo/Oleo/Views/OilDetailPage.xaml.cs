@@ -8,25 +8,25 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Oleo.Models;
 using Oleo.ViewModels;
+using Oleo.Data;
 
 namespace Oleo.Views
 {
+    [QueryProperty("Nume", "nume")]
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class OilDetailPage : ContentPage
     {
-        
-        
-        public OilDetailPage(string Nume, string Descriere, string Proprietati,string Indicatii, string Aplicare, string Atentie)
+        public string Nume
         {
+            set
+            {
+                BindingContext = OilData.Oils.FirstOrDefault(o => o.Nume == Uri.UnescapeDataString(value));
+            }
+        }
+
+        public OilDetailPage() 
+        { 
             InitializeComponent();
-
-            NumeOil.Text = Nume;
-            DescriereOil.Text = Descriere;
-            ProprietatiOil.Text = Proprietati;
-            IndicatiiOil.Text = Indicatii;
-            AplicareOil.Text = Aplicare;
-            AtentieOil.Text = Atentie;
-
         }
 
     }

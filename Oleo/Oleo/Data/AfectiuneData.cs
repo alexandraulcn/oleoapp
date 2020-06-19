@@ -12,6 +12,7 @@ namespace Oleo.Data
         static AfectiuneData()
         {
             Afectiuni = new List<Afectiune>();
+            
             /*Afectiuni.Add(new Afectiune
             {
                 Denumire = "",
@@ -19,6 +20,7 @@ namespace Oleo.Data
                 Recomandari = "",
                 Aplicare = ""
             })*/
+
             Afectiuni.Add(new Afectiune
             {
                 Denumire = "Acnee"

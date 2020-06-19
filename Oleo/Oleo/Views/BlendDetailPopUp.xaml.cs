@@ -10,16 +10,16 @@ using Oleo.Models;
 using SQLite;
 using System.IO;
 using Oleo.ViewModels;
-using Oleo.Persistence;
+using Oleo.Data;
 using Oleo.Services;
 
 namespace Oleo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BlendDetailPage : ContentPage
+    public partial class BlendDetailPopUp
     {
         
-        public BlendDetailPage(BlendViewModel viewModel)
+        public BlendDetailPopUp(BlendViewModel viewModel)
         { 
             InitializeComponent();
             

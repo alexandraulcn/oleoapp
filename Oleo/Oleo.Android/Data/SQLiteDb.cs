@@ -12,7 +12,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Oleo.Droid;
-using Oleo.Persistence;
+using Oleo.Data;
 using SQLite;
 using Xamarin.Forms;
 
