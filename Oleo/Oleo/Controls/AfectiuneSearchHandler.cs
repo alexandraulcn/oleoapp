@@ -37,9 +37,5 @@ namespace Oleo.Controls
             await Shell.Current.GoToAsync($"afectiunedetails?denumire={afectiuneDenumire}");
         }
 
-        string GetNavigationTarget()
-        {
-            return (Shell.Current as AppShell).Routes.FirstOrDefault(route => route.Value.Equals(SelectedItemNavigationTarget)).Key;
-        }
     }
 }
